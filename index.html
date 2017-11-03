@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html>
+
+  <head>
+    
+	<meta charset="utf-8" />
+	
+	<title>Fleischmann András</title>
+	
+	<style type="text/css">
+	
+		html {  }
+	
+	    body, p, div { 	margin: 0; padding: 0; font:40pt 'andale mono',courier,sans-serif;
+	     //border: 1px solid #333;
+	    }
+	    
+	    a:hover {
+	        background: -webkit-linear-gradient(left, #FF0000 0%, #FFFFFF 50%, #00FF00 90%);
+	        background: linear-gradient(to right,     #FF0000 0%, #FFFFFF 50%, #00FF00 90%);
+	        -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent
+	    }
+	    
+	    video.shadow {
+			position: relative; 
+
+	    	-webkit-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);					
+	    	-moz-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+	    	box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+					
+			width: 960px; 
+			height: 540px; 
+		
+			overflow: visible;
+			
+			margin: auto;	
+   	    }
+	    
+	    .wrapper {
+			width: 960px; 
+			height: 540px; 
+		
+			top:0; bottom: 0; left: 0; right: 0;
+			margin: auto;     
+	    }
+	    
+	    .content {	    
+	        position: absolute;
+	        
+	        top:0; bottom: 0; left: 0; right: 0;
+	        margin: auto;
+		        
+		    padding: 0.5em;
+	    }
+   	    
+	</style>
+  
+  	</head>
+
+<script type="text/javascript">
+    
+    // main()
+    
+	today = new Date();
+    diff  = new Date();
+	
+	var one_day = 1000 * 60 * 60 * 24;
+
+  	function dateDiff ( fromDate, toDate ) {
+    
+    	var returnString = "";
+    	var tmpdiff;
+    
+    	diff.setTime( new Date( fromDate.getFullYear(), fromDate.getMonth(), fromDate.getDate() ) - toDate );
+
+		if ( diff.getFullYear() - 1970 != 0 ) {
+   		  returnString += diff.getFullYear() - 1970 + " years, ";
+   	    }
+   	  
+   	    tmpdiff = diff.getMonth();
+   	 	if ( tmpdiff != 0 ) {
+   			returnString += tmpdiff + " " + ( ( tmpdiff != 1 ) ? "months" : "month" );
+   		}
+   	
+   	    tmpdiff = diff.getDate() - 1;
+   	  	if ( tmpdiff != 0 ) {
+   	 		returnString += " and " + tmpdiff + " " +( ( tmpdiff != 1 ) ? "days" : "day" );
+   	  	}
+  
+		return returnString; 
+  
+  	}    
+    
+    function myTimer () {
+    	document.getElementById ( 'andrasBirthDiff' ).innerHTML = dateDiff ( today, new Date( 2017, 09 - 1, 30 - 1, 22, 20 ) );
+    }
+    setInterval ( myTimer, 1000 );
+    
+  </script>
+
+  	<body>
+  
+  <div class="content">
+  
+		<div class="wrapper">
+			<video class="shadow" poster="andras.jpg" controls="controls" autoplay muted>
+			<source src="andras.mp4" type="video/mp4"/>
+			Syntax Error! Your browser does not support the video tag!
+			</video>
+		</div>
+		
+		<div style="margin-top: 0.5em;"><p align=center><a>Fleischmann András 2017-</a></p>
+		<p style="font-size: 14px;" align=center>Uptime: <span id="andrasBirthDiff">?</span></p>
+		<p style="font-size: 14px;">&nbsp;</p></div> 
+    
+  </div>
+    
+	</body>
+  
+</html>
