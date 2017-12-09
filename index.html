@@ -12,7 +12,7 @@
 	
 		html {  }
 	
-	    body, p, div { 	margin: 0; padding: 0; font:40pt 'andale mono',courier,sans-serif;
+	    body, p, div { margin: 0; padding: 0; font:40pt 'andale mono',courier,sans-serif;
 	     //border: 1px solid #333;
 	    }
 	    
@@ -23,6 +23,12 @@
 	        -webkit-text-fill-color: transparent
 	    }
 	    
+		img {
+	    	-webkit-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);					
+	    	-moz-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+	    	box-shadow: 0px 4px 18px rgba(0,0,0,0.84);			
+		}
+
 	    video.shadow {
 			position: relative; 
 
@@ -54,6 +60,39 @@
 		        
 		    padding: 0.5em;
 	    }
+
+		.column {
+		    float: left;
+		    width: 23%;
+		    padding: 1%;
+		}
+
+		.column img {
+		    margin-top: 0px;
+		    width: 100%;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		    content: "";
+		    display: table;
+		    clear: both;
+		    margin-bottom: 0.5em;
+		}
+
+		/* Responsive layout - makes a two column-layout instead of four columns */
+		@media (max-width: 800px) {
+		    .column {
+		        width: 50%;
+		    }
+		}
+
+		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+		@media (max-width: 600px) {
+		    .column {
+		        width: 100%;
+		   }
+		}
    	    
 	</style>
 
@@ -126,6 +165,21 @@
 		<div style="margin-top: 0.5em;"><p align=center><a>Fleischmann András 2017-</a></p>
 		<p style="font-size: 14px;" align=center>Uptime: <span id="andrasBirthDiff">?</span></p>
 		<p style="font-size: 14px;">&nbsp;</p></div> 
+
+<div class="row"> 
+  <div class="column">
+  	<img src="images/IMG_8361.jpg">
+  </div>
+  <div class="column">
+    <img src="images/IMG_8424.jpg">
+  </div> 
+  <div class="column">
+    <img src="">
+  </div>
+  <div class="column">
+    <img src="">
+  </div>
+</div>
 
 		<div class="wrapper">
 			<video class="shadow" poster="andras.jpg" controls="controls" muted>
