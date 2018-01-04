@@ -113,31 +113,35 @@
 <script type="text/javascript">
     
     // main()
-    
-	today = new Date();
-    diff  = new Date();
-	
-	var one_day = 1000 * 60 * 60 * 24;
 
-  	function dateDiff ( fromDate, toDate ) {
+    today = new Date();
+    diff  = new Date();
+    
+	function dateDiff ( fromDate, toDate ) {
     
     	var returnString = "";
     	var tmpdiff;
     
-    	diff.setTime( new Date( fromDate.getFullYear(), fromDate.getMonth(), fromDate.getDate() ) - toDate );
+		var one_day = 1000 * 60 * 60 * 24;
 
-		if ( diff.getFullYear() - 1970 != 0 ) {
-   		  returnString += diff.getFullYear() - 1970 + " years, ";
-   	    }
+    	diff.setTime( new Date( fromDate.getFullYear(), fromDate.getMonth(), fromDate.getDate(), fromDate.getHours(), fromDate.getMinutes() ) - toDate );
+
+    	tmpdiff = diff.getFullYear() - 1970; 	
+		if ( tmpdiff != 0 ) {
+			returnString += tmpdiff + " " + ( ( tmpdiff != 1 ) ? "years" : "year" );
+		}
    	  
+		if ( tmpdiff != 0 && ( diff.getMonth() != 0 || ( diff.getDate() - 1 ) != 0 ) ) returnString += ", "; 
+
    	    tmpdiff = diff.getMonth();
    	 	if ( tmpdiff != 0 ) {
    			returnString += tmpdiff + " " + ( ( tmpdiff != 1 ) ? "months" : "month" );
    		}
+   		if ( tmpdiff != 0 && ( ( diff.getDate() - 1 ) != 0 ) ) returnString += " and ";
    	
    	    tmpdiff = diff.getDate() - 1;
    	  	if ( tmpdiff != 0 ) {
-   	 		returnString += " and " + tmpdiff + " " +( ( tmpdiff != 1 ) ? "days" : "day" );
+   	 		returnString += tmpdiff + " " + ( ( tmpdiff != 1 ) ? "days" : "day" );
    	  	}
   
 		return returnString; 
