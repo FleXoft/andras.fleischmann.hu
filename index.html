@@ -43,7 +43,7 @@
 			
 			margin: auto;	
    	    }
-	    
+
 	    .wrapper {
 			width: 960px; 
 			height: 540px; 
@@ -51,6 +51,25 @@
 			top:0; bottom: 0; left: 0; right: 0;
 			margin: auto;     
 	    }
+
+.videocontainer {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-bottom: 1em;
+}
+
+.iframeshadow {
+    position: absolute;
+    top:  0;
+    left: 0;
+    width:  100%;
+    height: 100%;
+    
+    -webkit-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);          
+    -moz-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+    box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+}
 	    
 	    .content {	    
 	        position: absolute;
@@ -149,7 +168,7 @@
   	}    
     
     function myTimer () {
-    	document.getElementById ( 'andrasBirthDiff' ).innerHTML = dateDiff ( today, new Date( 2017, 09 - 1, 30 - 1, 22, 20 ) );
+    	document.getElementById ( 'andrasBirthDiff' ).innerHTML = dateDiff ( today, new Date( 2017, 09 - 1, 30, 22, 20 ) );
     }
     setInterval ( myTimer, 1000 );
     
@@ -159,16 +178,11 @@
   
   <div class="content">
   
-		<div class="wrapper">
-			<video class="shadow" poster="andras20171204.png" controls="controls" autoplay>
-			<source src="andras20171204.mp4" type="video/mp4"/>
-			Syntax Error! Your browser does not support the video tag!
-			</video>
-		</div>
+	<div style="margin: auto; width: 80%"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/1Z2rQ3_V8v4" frameborder="0" allowfullscreen></iframe></div></div>
 		
-		<div style="margin-top: 0.5em;"><p align=center><a>Fleischmann András 2017-</a></p>
-		<p style="font-size: 14px;" align=center>Uptime: <span id="andrasBirthDiff">?</span></p>
-		<p style="font-size: 14px;">&nbsp;</p></div> 
+	<p align=center><a>Fleischmann András 2017-</a></p>
+	<p style="font-size: 14px;" align=center>Uptime: <span id="andrasBirthDiff">?</span></p>
+	<p style="font-size: 14px;">&nbsp;</p> 
 
 <div class="row"> 
   <div class="column">
@@ -201,15 +215,10 @@
   </div>
 </div>
 
-		<div class="wrapper">
-			<video class="shadow" poster="andras.png" controls="controls" muted>
-			<source src="andras.mp4" type="video/mp4"/>
-			Syntax Error! Your browser does not support the video tag!
-			</video>
-		</div>
+	<div style="margin: auto; width: 80%"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/_naWJjFmz5k" frameborder="0" allowfullscreen></iframe></div></div>
     
   </div>
     
-	</body>
+  	</body>
   
 </html>
