@@ -141,36 +141,107 @@
     today = new Date();
     diff  = new Date();
     
-	function dateDiff ( fromDate, toDate ) {
-    
-    	var returnString = "";
-    	var tmpdiff;
-    
-		var one_day = 1000 * 60 * 60 * 24;
+	/*
+	 * Function to calculate the absolute difference in days, months and years between 2 days taking into account variable month lengths and leap years
+	 * It ignores any time component (ie hours, minutes and seconds)
+	 *
+	 * https://gist.github.com/clecuona/2945438
+	 */
+	function dateDiff(dt1, dt2)
+	{
+	    /*
+	     * setup 'empty' return object
+	     */
+	    var ret = {days:0, months:0, years:0};
 
-    	diff.setTime( new Date( fromDate.getFullYear(), fromDate.getMonth(), fromDate.getDate(), fromDate.getHours(), fromDate.getMinutes() ) - toDate );
+	    /*
+	     * If the dates are equal, return the 'empty' object
+	     */
+	    if (dt1 == dt2) return ret;
 
-    	tmpdiff = diff.getFullYear() - 1970; 	
-		if ( tmpdiff != 0 ) {
-			returnString += tmpdiff + " " + ( ( tmpdiff != 1 ) ? "years" : "year" );
+	    /*
+	     * ensure dt2 > dt1
+	     */
+	    if (dt1 > dt2)
+	    {
+	        var dtmp = dt2;
+	        dt2 = dt1;
+	        dt1 = dtmp;
+	    }
+
+	    /*
+	     * First get the number of full years
+	     */
+
+	    var year1 = dt1.getFullYear();
+	    var year2 = dt2.getFullYear();
+
+	    var month1 = dt1.getMonth();
+	    var month2 = dt2.getMonth();
+
+	    var day1 = dt1.getDate();
+	    var day2 = dt2.getDate();
+
+	    /*
+	     * Set initial values bearing in mind the months or days may be negative
+	     */
+
+	    ret['years'] = year2 - year1;
+	    ret['months'] = month2 - month1;
+	    ret['days'] = day2 - day1;
+
+	    /*
+	     * Now we deal with the negatives
+	     */
+
+	    /*
+	     * First if the day difference is negative
+	     * eg dt2 = 13 oct, dt1 = 25 sept
+	     */
+	    if (ret['days'] < 0)
+	    {
+	        /*
+	         * Use temporary dates to get the number of days remaining in the month
+	         */
+	        var dtmp1 = new Date(dt1.getFullYear(), dt1.getMonth() + 1, 1, 0, 0, -1);
+
+	        var numDays = dtmp1.getDate();
+
+	        ret['months'] -= 1;
+	        ret['days'] += numDays;
+
+	    }
+
+	    /*
+	     * Now if the month difference is negative
+	     */
+	    if (ret['months'] < 0)
+	    {
+	        ret['months'] += 12;
+	        ret['years'] -= 1;
+	    }
+
+	    // Add string conversion
+	    var returnString = "";
+
+		if ( ret['years'] != 0 ) {
+	    	returnString += ret['years'] + " " + ( ( ret['years'] != 1 ) ? "years" : "year" );
 		}
-   	  
-		if ( tmpdiff != 0 && ( diff.getMonth() != 0 || ( diff.getDate() - 1 ) != 0 ) ) returnString += ", "; 
+		
+		if ( ret['years'] != 0 && ret['months'] != 0 ) returnString += ", ";
 
-   	    tmpdiff = diff.getMonth();
-   	 	if ( tmpdiff != 0 ) {
-   			returnString += tmpdiff + " " + ( ( tmpdiff != 1 ) ? "months" : "month" );
-   		}
-   		if ( tmpdiff != 0 && ( ( diff.getDate() - 1 ) != 0 ) ) returnString += " and ";
-   	
-   	    tmpdiff = diff.getDate() - 1;
-   	  	if ( tmpdiff != 0 ) {
-   	 		returnString += tmpdiff + " " + ( ( tmpdiff != 1 ) ? "days" : "day" );
-   	  	}
-  
-		return returnString; 
-  
-  	}    
+	 	if ( ret['months'] != 0 ) {
+			returnString += ret['months'] + " " + ( ( ret['months'] != 1 ) ? "months" : "month" );
+	 	}
+	 	
+		if ( (ret['years'] != 0 || ret['months'] != 0 ) && ret['days'] != 0 ) returnString += " and ";
+
+	  	if ( ret['days'] != 0 ) {
+	 	  	returnString += ret['days'] + " " +( ( ret['days'] != 1 ) ? "days" : "day" );
+	  	}
+
+	    return returnString;
+	}
     
     function myTimer () {
     	document.getElementById ( 'andrasBirthDiff' ).innerHTML = dateDiff ( today, new Date( 2017, 09 - 1, 30, 22, 20 ) );
