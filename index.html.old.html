@@ -1,0 +1,581 @@
+<!doctype html public "-//W3C//DTD HTML 5.0//EN" "http://www.w3.org/TR/html5/strict.dtd">
+
+<!-- 
+
+#                  _                  __ _      _          _                                   _
+#                 | |                / _| |    (_)        | |                                 | |
+#   __ _ _ __   __| |_ __ __ _ ___  | |_| | ___ _ ___  ___| |__  _ __ ___   __ _ _ __  _ __   | |__  _   _
+#  / _` | '_ \ / _` | '__/ _` / __| |  _| |/ _ \ / __|/ __| '_ \| '_ ` _ \ / _` | '_ \| '_ \  | '_ \| | | |
+# | (_| | | | | (_| | | | (_| \__ \_| | | |  __/ \__ \ (__| | | | | | | | | (_| | | | | | | |_| | | | |_| |
+#  \__,_|_| |_|\__,_|_|  \__,_|___(_)_| |_|\___|_|___/\___|_| |_|_| |_| |_|\__,_|_| |_|_| |_(_)_| |_|\__,_|
+# 
+# ---------------------------------------------------------------------------------------------------------
+ 
+# 
+# Rls: 2018.01.01.  
+#
+
+-->
+
+<html lang="hu-HU">
+
+  <head>
+    
+	<meta charset="utf-8" />
+	
+	<title>Fleischmann András</title>
+
+	<meta name="owner" content="FLEISCHMANN András" />
+	<meta name="author" content="FLEISCHMANN András" />
+	<meta name="description" content="A personal page for Fleischmann András."/>
+	<meta http-equiv="cleartype" content="on">
+
+	<style type="text/css">
+	
+		html {  }
+	
+	    body, p, div { margin: 0; padding: 0; font:40pt 'andale mono',courier,sans-serif;
+	     //border: 1px solid #333;
+	    }
+	    
+	    a:hover {
+	        background: -webkit-linear-gradient(left, #FF0000 0%, #FFFFFF 50%, #00FF00 90%);
+	        background: linear-gradient(to right,     #FF0000 0%, #FFFFFF 50%, #00FF00 90%);
+	        -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent
+	    }
+	    
+		img {
+	    	-webkit-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);					
+	    	-moz-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+	    	box-shadow: 0px 4px 18px rgba(0,0,0,0.84);			
+		}
+
+	    video.shadow {
+			position: relative; 
+
+	    	-webkit-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);					
+	    	-moz-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+	    	box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+					
+			width: 960px; 
+			height: 540px; 
+		
+			overflow: visible;
+			
+			margin: auto;	
+   	    }
+
+	    .wrapper {
+			width: 960px; 
+			height: 540px; 
+		
+			top:0; bottom: 0; left: 0; right: 0;
+			margin: auto;     
+	    }
+
+		.videocontainer {
+		    position: relative;
+		    height: 0;
+		    padding-bottom: 56.25%;
+		    margin-bottom: 1em;
+		}
+
+		.iframeshadow {
+		    position: absolute;
+		    top:  0;
+		    left: 0;
+		    width:  100%;
+		    height: 100%;
+		    
+		    -webkit-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);          
+		    -moz-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+		    box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+		}
+	    
+	    .content {	    
+	        position: absolute;
+	        
+	        top:0; bottom: 0; left: 0; right: 0;
+	        margin: auto;
+		        
+		    padding: 0.5em;
+	    }
+
+		.column {
+		    float: left;
+		    width: 23%;
+		    padding: 1%;
+		}
+
+		.column img {
+		    margin-top   : 0px;
+		    margin-bottom: 8px;
+		    width: 100%;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		    content: "";
+		    display: table;
+		    clear: both;
+		    margin-bottom: 0.5em;
+		}
+
+		/* Responsive layout - makes a two column-layout instead of four columns */
+		@media (max-width: 800px) {
+		    .column {
+		        width: 46%;
+		    }
+		}
+
+		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+		@media (max-width: 600px) {
+		    .column {
+		        width: 100%;
+		   }
+		}
+   	    
+	</style>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108075264-4"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-108075264-4');
+	</script>
+  
+  <!-- PhotoSwipe part 1. -->
+
+  <!-- Core CSS file -->
+  <link rel="stylesheet" href="PhotoSwipe/photoswipe.css"> 
+
+  <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+       In the folder of skin CSS file there are also:
+       - .png and .svg icons sprite, 
+       - preloader.gif (for browsers that do not support CSS animations) -->
+  <link rel="stylesheet" href="PhotoSwipe/default-skin/default-skin.css"> 
+
+  <!-- Core JS file -->
+  <script src="PhotoSwipe/photoswipe.min.js"></script> 
+
+  <!-- UI JS file -->
+  <script src="PhotoSwipe/photoswipe-ui-default.min.js"></script> 
+
+</head>
+
+<!-- PhotoSwipe must have part 2. -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" style="margin: 0; padding: 0;">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar" style="margin: 0; padding: 0;">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center" style="font-size: 25px; text-align: center;"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- my simple dateDiff script -->
+
+<script type="text/javascript">
+    
+    // main()
+
+    today = new Date();
+    diff  = new Date();
+    
+	/*
+	 * Function to calculate the absolute difference in days, months and years between 2 days taking into account variable month lengths and leap years
+	 * It ignores any time component (ie hours, minutes and seconds)
+	 *
+	 * https://gist.github.com/clecuona/2945438
+	 */
+	function dateDiff( dt1, dt2 )
+	{
+	    /*
+	     * setup 'empty' return object
+	     */
+	    var ret = { days:0, months:0, years:0 };
+
+	    /*
+	     * If the dates are equal, return the 'empty' object
+	     */
+	    if ( dt1 == dt2 ) return ret;
+
+	    /*
+	     * ensure dt2 > dt1
+	     */
+	    if ( dt1 > dt2 )
+	    {
+	        var dtmp = dt2;
+	        dt2 = dt1;
+	        dt1 = dtmp;
+	    }
+
+	    /*
+	     * First get the number of full years
+	     */
+
+	    var year1 = dt1.getFullYear();
+	    var year2 = dt2.getFullYear();
+
+	    var month1 = dt1.getMonth();
+	    var month2 = dt2.getMonth();
+
+	    var day1 = dt1.getDate();
+	    var day2 = dt2.getDate();
+
+	    /*
+	     * Set initial values bearing in mind the months or days may be negative
+	     */
+
+	    ret['years'] = year2 - year1;
+	    ret['months'] = month2 - month1;
+	    ret['days'] = day2 - day1;
+
+	    /*
+	     * Now we deal with the negatives
+	     */
+
+	    /*
+	     * First if the day difference is negative
+	     * eg dt2 = 13 oct, dt1 = 25 sept
+	     */
+	    if ( ret['days'] < 0 )
+	    {
+	        /*
+	         * Use temporary dates to get the number of days remaining in the month
+	         */
+	        var dtmp1 = new Date( dt1.getFullYear(), dt1.getMonth() + 1, 1, 0, 0, -1 );
+
+	        var numDays = dtmp1.getDate();
+
+	        ret['months'] -= 1;
+	        ret['days'] += numDays;
+
+	    }
+
+	    /*
+	     * Now if the month difference is negative
+	     */
+	    if ( ret['months'] < 0 )
+	    {
+	        ret['months'] += 12;
+	        ret['years'] -= 1;
+	    }
+
+	    // Add string conversion
+	    var returnString = "";
+
+		if ( ret['years'] != 0 ) {
+	    	returnString += ret['years'] + " " + ( ( ret['years'] != 1 ) ? "years" : "year" );
+		}
+		
+		if ( ret['years'] != 0 && ret['months'] != 0 ) returnString += ", ";
+
+	 	if ( ret['months'] != 0 ) {
+			returnString += ret['months'] + " " + ( ( ret['months'] != 1 ) ? "months" : "month" );
+	 	}
+	 	
+		if ( (ret['years'] != 0 || ret['months'] != 0 ) && ret['days'] != 0 ) returnString += " and ";
+
+	  	if ( ret['days'] != 0 ) {
+	 	  	returnString += ret['days'] + " " +( ( ret['days'] != 1 ) ? "days" : "day" );
+	  	}
+
+	    return returnString;
+	}
+    
+    function myTimer () {
+    	document.getElementById ( 'andrasBirthDiff' ).innerHTML = dateDiff ( today, new Date( 2017, 09 - 1, 30, 22, 20 ) );
+    }
+    setInterval ( myTimer, 1000 );
+    
+  </script>
+
+  	<body>
+  
+  <div class="content">
+
+	<div style="margin: auto; width: 80%; margin-bottom: -26px;"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/V-yyQSh99GU" frameborder="0" allowfullscreen></iframe></div></div>
+		
+	<p align="center"><a>Fleischmann András 2017-</a></p>
+	<p style="font-size: 14px;" align=center>uptime: <span id="andrasBirthDiff">?</span></p>
+	<p style="font-size: 14px;">&nbsp;</p> 
+
+
+<div class="row"> 
+  <div class="column">
+  	<img src="photos/andras/PICT0002.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-551380282.675948.jpg">
+	<img src="photos/andras/HipstamaticPhoto-552809192.176390.jpg">
+  	<a href="javascript:openPhotoSwipe(); gallery.goTo(0);"><img src="photos/andras/HipstamaticPhoto-551114471.203205.jpg"></a>
+	<img src="photos/andras/HipstamaticPhoto-551114501.499062.jpg">
+    <img src="photos/andras/HipstamaticPhoto-550335040.458681.jpg">
+  	<img src="photos/andras/IMG_8789.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-550335064.513928.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-550081374.094310.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-549104135.983141.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-549104210.942803.jpg">
+	<img src="photos/andras/HipstamaticPhoto-547669904.663475.jpg">
+	<img src="photos/andras/HipstamaticPhoto-546104745.123122.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-546104237.979988.jpg">
+  	<img src="photos/andras/IMG_0781.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-545115639.594855.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-544364686.251606.jpg">
+	<img src="photos/andras/HipstamaticPhoto-544349967.542513.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-542132534.296928.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-540930611.270768.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-541234432.980360.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-538905555.997308.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-538040190.205535.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-537563894.166426.jpg">
+  </div>
+  <div class="column">
+  	<img src="photos/andras/HipstamaticPhoto-553529309.490697.jpg">
+  	<img src="photos/andras/PICT0005.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-552809207.484726.jpg">
+	<img src="photos/andras/HipstamaticPhoto-552809760.582877.jpg">
+	<img src="photos/andras/HipstamaticPhoto-552810186.311342.jpg">
+  	<a href="javascript:openPhotoSwipe(); gallery.goTo(1);"><img src="photos/andras/HipstamaticPhoto-551284335.679421.jpg"></a>
+	<img src="photos/andras/HipstamaticPhoto-551284349.563489.jpg">
+  	<img src="photos/andras/IMG_8846.jpg">
+  	<img src="photos/andras/PICT0011.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-550335290.161709.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-550083632.595949.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-549104143.976278.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-547669916.291832.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-546104314.455248.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-546104299.131488.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-545331056.972809.jpg">
+  	<img src="photos/andras/IMG_4586.jpg">
+	<img src="photos/andras/HipstamaticPhoto-544349955.855868.jpg">
+	<img src="photos/andras/HipstamaticPhoto-544349939.115251.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-542132710.209131.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-540930635.998068.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-541234498.215577.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-538172414.545046.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-537563932.261973.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-537564279.986055.jpg">
+  </div>
+  <div class="column">
+  	<img src="photos/andras/PICT0023.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-553443836.342946.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-552810631.372963.jpg">
+	<img src="photos/andras/HipstamaticPhoto-552936043.762734.jpg">
+  	<a href="javascript:openPhotoSwipe(); gallery.goTo(2);"><img src="photos/andras/HipstamaticPhoto-551355540.875160.jpg"></a>
+	<img src="photos/andras/HipstamaticPhoto-551355548.357657.jpg">
+   	<img src="photos/andras/HipstamaticPhoto-550335225.613464.jpg">
+  	<img src="photos/andras/PICT0019.jpg">
+	<img src="photos/andras/HipstamaticPhoto-550335228.447476.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-550083650.876991.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-549104196.921091.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-547669966.753100.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-547669928.980866.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-546104226.872233.jpg">
+	<img src="photos/andras/HipstamaticPhoto-546104212.821442.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-546104229.512977.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-545331145.953787.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-542489912.626501.jpg">
+	<img src="photos/andras/HipstamaticPhoto-542455538.172725.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-542132734.687418.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-542132719.252643.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-541168784.800895.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-538172680.542122.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-537563976.981756.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-537563964.430652.jpg">
+  </div>
+  <div class="column">
+  	<img src="photos/andras/OriginalPhoto-553530308.649999.jpg">
+	<img src="photos/andras/HipstamaticPhoto-552936091.000470.jpg">
+	<img src="photos/andras/HipstamaticPhoto-552991430.519033.jpg">
+  	<a href="javascript:openPhotoSwipe(); gallery.goTo(3);"><img src="photos/andras/HipstamaticPhoto-551379156.351150.jpg"></a>
+	<img src="photos/andras/HipstamaticPhoto-551379162.329883.jpg">
+  	<img src="photos/andras/PICT0039.jpg">
+  	<img src="photos/andras/IMG_8409.jpg">
+  	<img src="photos/andras/PICT0034.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-550335316.720316.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-549104219.138029.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-547669971.861611.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-546104292.531155.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-546104270.229947.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-546104245.332319.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-545331246.185643.jpg">
+  	<img src="photos/andras/PICT0024.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-542139533.066319.jpg">
+	<img src="photos/andras/HipstamaticPhoto-542139511.145072.jpg">
+	<img src="photos/andras/HipstamaticPhoto-542132731.539702.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-541158579.007018.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-538904973.558219.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-537564170.517063.jpg">
+  	<img src="photos/andras/HipstamaticPhoto-537564102.742688.jpg">
+  </div>
+</div>
+
+<div style="margin: auto; width: 80%""><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/G7m9tkDun7Q" frameborder="0" allowfullscreen></iframe></div></div>
+
+<div style="margin: auto; width: 80%"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/TxEV_PLaews" frameborder="0" allowfullscreen></iframe></div></div>
+
+<div style="margin: auto; width: 80%"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/wZsaxDncVfI" frameborder="0" allowfullscreen></iframe></div></div>
+
+<div style="margin: auto; width: 80%"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/R38svmJK3xA" frameborder="0" allowfullscreen></iframe></div></div>
+
+<hr style="margin-bottom: 0;">
+<center><span style="font-size: 0.5em;">2017</span></center>
+
+<div class="row"> 
+  <div class="column">
+  	<img src="photos/andras/PICT0022.jpg">
+  	<img src="photos/andras/IMG_9150.jpg">
+  	<img src="photos/andras/PICT0087.jpg">
+  	<img src="photos/andras/IMG_9149.jpg">
+  	<img src="photos/andras/IMG_9072.jpg">
+    <img src="photos/andras/IMG_4044.jpg">
+  </div>
+  <div class="column">
+    <img src="photos/andras/IMG_9103.jpg">
+  	<img src="photos/andras/PICT0059.jpg">
+  	<img src="photos/andras/IMG_9200.jpg">  	
+    <img src="photos/andras/IMG_9090.jpg">
+    <img src="photos/andras/IMG_8825.jpg">
+  </div>
+  <div class="column">
+  	<img src="photos/andras/IMG_9151.jpg">
+  	<img src="photos/andras/IMG_9202.jpg">
+  	<img src="photos/andras/IMG_9176.jpg">
+  	<img src="photos/andras/IMG_9022.jpg">
+    <img src="photos/andras/IMG_8424.jpg">
+  </div> 
+  <div class="column">
+  	<img src="photos/andras/PICT0076.jpg">
+    <img src="photos/andras/IMG_9181.jpg">
+  	<img src="photos/andras/IMG_9201.jpg">
+  	<img src="photos/andras/IMG_9032.jpg">
+  	<img src="photos/andras/IMG_8361.jpg">
+  </div>
+</div>
+
+	<div style="margin: auto; width: 80%"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/1Z2rQ3_V8v4" frameborder="0" allowfullscreen></iframe></div></div>
+
+	<div style="margin: auto; width: 80%"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/_naWJjFmz5k" frameborder="0" allowfullscreen></iframe></div></div>
+    
+    <br style="clear: both;">
+
+  </div>
+
+<script type="text/javascript">
+
+  var gallery;
+
+  var openPhotoSwipe = function() {
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+
+    // build items array
+    var items = [
+        {   src   : 'photos/andras/HipstamaticPhoto-551114471.203205_ORIGINAL.jpg',
+            w     : 2448,
+            h     : 2448,
+            title : 'Fleischmann András',
+            author: 'Fleischmann György' },
+        {   src   : 'photos/andras/HipstamaticPhoto-551284335.679421_ORIGINAL.jpg',
+            w     : 2448,
+            h     : 2448,
+            title : 'Fleischmann András',
+            author: 'Fleischmann György' },
+        {   src   : 'photos/andras/HipstamaticPhoto-551355540.875160_ORIGINAL.jpg',
+            w     : 2448,
+            h     : 2448,
+            title : 'Fleischmann András',
+            author: 'Fleischmann György' },
+         {   src   : 'photos/andras/HipstamaticPhoto-551379156.351150_ORIGINAL.jpg',
+            w     : 2448,
+            h     : 2448,
+            title : 'Fleischmann András',
+            author: 'Fleischmann György' }
+    ];
+    
+    // define options (if needed)
+    var options = {
+        // history & focus options are disabled on CodePen        
+        history: false,
+        focus: false,
+
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+        
+    };
+    
+    gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+    
+  };
+
+  //openPhotoSwipe();
+  //document.getElementById('btn').onclick = openPhotoSwipe;
+
+</script>
+
+  	</body>
+  
+</html>

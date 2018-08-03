@@ -1,0 +1,31 @@
+###########
+# site.title, site.url, site.author.name
+
+title:   'andras.fleischmann.hu'
+
+## note: 
+#  use site.path in your templates to make it work for both protocols e.g. http and https
+#  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
+path: ''
+url:  'http://fleischmann.hu/'
+
+########
+# more settings
+
+markdown:    kramdown
+highlighter: rouge
+
+extensions: [footnotes]
+
+sass:
+  sass_dir: css
+  style:    expanded
+
+permalink: /:title.html
+
+exclude:
+- README.md
+
+safe:   true
+lsi:    false
+future: false
