@@ -10,6 +10,7 @@ my $verbose;                      #
 my $filelist;                     # jpgfilelist (jpg|title|author)
 my $exclude;                      # exclude
 my $outdir = "_includes";         # output directory
+my $filetag = "";                 #
 my $debug;                        #
 my $help;
 GetOptions ( "rows=i"       => \$rows,
@@ -18,6 +19,7 @@ GetOptions ( "rows=i"       => \$rows,
              "filelist=s"   => \$filelist,
              "exclude=s"    => \$exclude,
              "outdir=s"     => \$outdir,
+             "filetag=s"        => \$filetag,
              "debug"        => \$debug,
              "help"         => \$help )   
 or die( "Error in command line arguments\n" );
@@ -38,7 +40,8 @@ PhotoSwipeGenerator.pl
     - verbose
     - filelist
     - exclude
-    - outdir 
+    - outdir
+    - filetag 
     - debug
     - help
 
@@ -76,11 +79,11 @@ sub isFileReadable ( $ ) {
 }
 
 #open( PICS,   "<pics.txt" ) or die "$!";
-open ( ROW01,  "> $outdir/row1.html" ) or die "$!";
-open ( ROW02,  "> $outdir/row2.html" ) or die "$!";
-open ( ROW03,  "> $outdir/row3.html" ) or die "$!";
-open ( ROW04,  "> $outdir/row4.html" ) or die "$!";
-open ( ARRAYS, "> $outdir/array.html" ) or die "$!";
+open ( ROW01,  "> $outdir/row1$filetag.html" ) or die "$!";
+open ( ROW02,  "> $outdir/row2$filetag.html" ) or die "$!";
+open ( ROW03,  "> $outdir/row3$filetag.html" ) or die "$!";
+open ( ROW04,  "> $outdir/row4$filetag.html" ) or die "$!";
+open ( ARRAYS, "> $outdir/array$filetag.html" ) or die "$!";
 
 print "Generating...\n";
 
