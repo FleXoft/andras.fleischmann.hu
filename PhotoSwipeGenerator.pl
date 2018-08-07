@@ -13,6 +13,7 @@ my $outdir = "_includes";         # output directory
 my $filetag = "";                 #
 my $debug;                        #
 my $help;
+my $man;
 GetOptions ( "rows=i"       => \$rows,
              "directory=s"  => \$directory,
              "verbose"      => \$verbose,
@@ -21,7 +22,8 @@ GetOptions ( "rows=i"       => \$rows,
              "outdir=s"     => \$outdir,
              "filetag=s"        => \$filetag,
              "debug"        => \$debug,
-             "help"         => \$help )   
+             "help"         => \$help,
+             "man"          => \$man )   
 or die( "Error in command line arguments\n" );
 
 use Pod::Usage;
@@ -44,6 +46,7 @@ PhotoSwipeGenerator.pl
     - filetag 
     - debug
     - help
+    - man 
 
 =head1 OPTIONS
 
@@ -53,19 +56,64 @@ PhotoSwipeGenerator.pl
 
 Print a brief help message and exits.
 
+=item B<-man>
+
+Detailed manual page.
+
 =item B<-debug>
 
-Debug option.
+Debug option to get debug messages.
+
+=item B<-verbose>
+
+Enable verbose outputs.
+
+=item B<-directory>
+
+Specify the source directory to scan *.jpg files.
+
+=item B<-rows>
+
+Specify the # of rows you want to create. Default: 4
+
+=item B<-filelist>
+
+Specify a file wich contains the files with full path to process.
+
+=item B<-exclude>
+
+Exclude this file matching this pattern.
+
+=item B<-outdir>
+
+Specify the output directory.
+
+=item B<-filetag>
+
+Specify an extra tag for the links and file names.
 
 =back
 
+=cut
+
 =head1 DESCRIPTION
 
-B<This program> will create...
+B<This program> will generate array.html, rowx.html file to help implement Responsive JavaScript Image Gallery package.
+
+http://photoswipe.com/
 
 =cut
 
-pod2usage( q( -verbose ) => 2 ) if $help;
+=head1 EXAMPLES
+
+Examples of this script:
+
+./PhotoSwipeGenerator.pl --directory photos/2017-11-05-Ulloi --filetag _ulloi --outdir _includes
+
+=cut
+
+pod2usage( q( -verbose ) => 1 ) if $help;
+pod2usage( -exitval => 0, -verbose => 2 ) if $man;
 
 print "$verbose\n" if $verbose;
 
@@ -76,6 +124,14 @@ sub isFileReadable ( $ ) {
     return 1;
   }
   return 0;
+}
+
+# readFile2Variable ( filename )
+sub readFile2Variable ( $ ) {
+  open FILEHNDLR,"$_[0]";
+  my $return = join( '' , <FILEHNDLR> );
+  close FILEHNDLR;
+  return $return;
 }
 
 #open( PICS,   "<pics.txt" ) or die "$!";
@@ -97,7 +153,7 @@ foreach ( `ls -1dt "$directory"/*.jpg | grep _ORIGINAL` ) {
   # skip if file is missing
   my $originalFilename = $_;
   #$originalFilename =~ s/.jpg/_ORIGINAL.jpg/;
-  next if isFileReadable ( "$originalFilename" );
+  #next if isFileReadable ( "$originalFilename" );
 
   my $filename = $originalFilename;
   $filename =~ s/_ORIGINAL\.jpg/\.jpg/;
