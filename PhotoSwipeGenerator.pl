@@ -11,6 +11,7 @@ my $filelist;                     # jpgfilelist (jpg|title|author)
 my $exclude;                      # exclude
 my $outdir = "_includes";         # output directory
 my $filetag = "";                 #
+my $imgproperty = "";             # extra link property 
 my $debug;                        #
 my $help;
 my $man;
@@ -20,7 +21,8 @@ GetOptions ( "rows=i"       => \$rows,
              "filelist=s"   => \$filelist,
              "exclude=s"    => \$exclude,
              "outdir=s"     => \$outdir,
-             "filetag=s"        => \$filetag,
+             "filetag=s"    => \$filetag,
+             "imgproperty"  => \$imgproperty,
              "debug"        => \$debug,
              "help"         => \$help,
              "man"          => \$man )   
@@ -92,6 +94,10 @@ Specify the output directory.
 
 Specify an extra tag for the links and file names.
 
+=item B<-imgproperty>
+
+Specify an extra HTML img property for the links.
+
 =back
 
 =cut
@@ -160,7 +166,7 @@ foreach ( `ls -1dt "$directory"/*.jpg | grep _ORIGINAL` ) {
   next if isFileReadable ( "$filename" );
 
   # create a link
-	my $picHTML = "<a href=\"javascript:openPhotoSwipe(); gallery.goTo( $counter );\"><img src=\"".$filename."\"></a>\n";
+	my $picHTML = "<a href=\"javascript:openPhotoSwipe(); gallery.goTo( $counter );\"><img $imgproperty src=\"".$filename."\"></a>\n";
 
   my $modulo = $counter % 4;
 	

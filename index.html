@@ -50,6 +50,21 @@
 	    	-moz-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
 	    	box-shadow: 0px 4px 18px rgba(0,0,0,0.84);			
 		}
+		img.zoomeffect {
+			-webkit-transition: all 0.3s ease-out;
+		  	-moz-transition: all 0.3s ease-out;
+		  	transition: all 0.3s ease-out
+		}
+		img.zoomeffect:hover {
+		  	transform: scale(1.03);
+		  	-ms-transform: scale(1.03);
+		  	-webkit-transform: scale(1.03);
+		  	-o-transform: scale(1.03);
+		  	-moz-transform: scale(1.03)
+		}
+		img.zoomeffect:active {
+		   	transform: translateY(4px);
+		}
 
 	    video.shadow {
 			position: relative; 
@@ -367,7 +382,7 @@
 
 <div class="row"> 
   <div class="column">
-<a href="javascript:openPhotoSwipe(); gallery.goTo( 0 );"><img src="photos/andras/PICT0003.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 0 );"><img class="zoomeffect" src="photos/andras/PICT0003.jpg"></a>
 <a href="javascript:openPhotoSwipe(); gallery.goTo( 4 );"><img src="photos/andras/HipstamaticPhoto-553683796.241591.jpg"></a>
 <a href="javascript:openPhotoSwipe(); gallery.goTo( 8 );"><img src="photos/andras/HipstamaticPhoto-555160156.606588.jpg"></a>
 <a href="javascript:openPhotoSwipe(); gallery.goTo( 12 );"><img src="photos/andras/HipstamaticPhoto-553529309.490697.jpg"></a>
@@ -1325,6 +1340,8 @@ author: 'Fleischmann György'
         history: false,
         focus: false,
 
+        bgOpacity: 0.96,
+
         showAnimationDuration: 0,
         hideAnimationDuration: 0
         
@@ -1501,6 +1518,8 @@ author: 'Fleischmann György'
         // history & focus options are disabled on CodePen        
         history: false,
         focus: false,
+
+        bgOpacity: 0.96,
 
         showAnimationDuration: 0,
         hideAnimationDuration: 0

@@ -50,6 +50,21 @@
 	    	-moz-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
 	    	box-shadow: 0px 4px 18px rgba(0,0,0,0.84);			
 		}
+		img.zoomeffect {
+			-webkit-transition: all 0.3s ease-out;
+		  	-moz-transition: all 0.3s ease-out;
+		  	transition: all 0.3s ease-out
+		}
+		img.zoomeffect:hover {
+		  	transform: scale(1.03);
+		  	-ms-transform: scale(1.03);
+		  	-webkit-transform: scale(1.03);
+		  	-o-transform: scale(1.03);
+		  	-moz-transform: scale(1.03)
+		}
+		img.zoomeffect:active {
+		   	transform: translateY(4px);
+		}
 
 	    video.shadow {
 			position: relative; 
@@ -430,6 +445,8 @@
         history: false,
         focus: false,
 
+        bgOpacity: 0.96,
+
         showAnimationDuration: 0,
         hideAnimationDuration: 0
         
@@ -451,6 +468,8 @@
         // history & focus options are disabled on CodePen        
         history: false,
         focus: false,
+
+        bgOpacity: 0.96,
 
         showAnimationDuration: 0,
         hideAnimationDuration: 0
