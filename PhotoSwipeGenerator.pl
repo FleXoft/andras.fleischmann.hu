@@ -15,17 +15,17 @@ my $imgproperty = "";             # extra link property
 my $debug;                        #
 my $help;
 my $man;
-GetOptions ( "rows=i"       => \$rows,
-             "directory=s"  => \$directory,
-             "verbose"      => \$verbose,
-             "filelist=s"   => \$filelist,
-             "exclude=s"    => \$exclude,
-             "outdir=s"     => \$outdir,
-             "filetag=s"    => \$filetag,
-             "imgproperty"  => \$imgproperty,
-             "debug"        => \$debug,
-             "help"         => \$help,
-             "man"          => \$man )   
+GetOptions ( "rows=i"         => \$rows,
+             "directory=s"    => \$directory,
+             "verbose"        => \$verbose,
+             "filelist=s"     => \$filelist,
+             "exclude=s"      => \$exclude,
+             "outdir=s"       => \$outdir,
+             "filetag=s"      => \$filetag,
+             "imgproperty=s"  => \$imgproperty,
+             "debug"          => \$debug,
+             "help"           => \$help,
+             "man"            => \$man )   
 or die( "Error in command line arguments\n" );
 
 use Pod::Usage;
