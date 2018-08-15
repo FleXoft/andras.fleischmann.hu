@@ -3,18 +3,23 @@
 use strict;
 use warnings;
 
+use Pod::Usage;
+
 use Getopt::Long;
-my $directory = 'photos/andras';  # directory
-my $rows      = 4;                # row#
-my $verbose;                      #
-my $filelist;                     # jpgfilelist (jpg|title|author)
-my $exclude;                      # exclude
-my $outdir = "_includes";         # output directory
-my $filetag = "";                 #
-my $imgproperty = "";             # extra link property 
-my $debug;                        #
+my $directory    = 'photos/andras';       # directory
+my $rows         = 4;                     # row#
+my $verbose;                              #
+my $filelist;                             # jpgfilelist (jpg|title|author)
+my $exclude;                              # exclude
+my $outdir       = "_includes";           # output directory
+my $filetag      = "";                    #
+my $imgproperty  = "";                    # extra link property 
+my $globaltitle  = "Fleischmann András";  #
+my $globalauthor = "Fleischmann György";  #
+my $debug;                                #
 my $help;
 my $man;
+
 GetOptions ( "rows=i"         => \$rows,
              "directory=s"    => \$directory,
              "verbose"        => \$verbose,
@@ -23,12 +28,12 @@ GetOptions ( "rows=i"         => \$rows,
              "outdir=s"       => \$outdir,
              "filetag=s"      => \$filetag,
              "imgproperty=s"  => \$imgproperty,
+             "title=s"        => \$globaltitle,
+             "author=s"       => \$globalauthor,
              "debug"          => \$debug,
              "help"           => \$help,
              "man"            => \$man )   
 or die( "Error in command line arguments\n" );
-
-use Pod::Usage;
 
 =head1 NAME
 
@@ -45,7 +50,10 @@ PhotoSwipeGenerator.pl
     - filelist
     - exclude
     - outdir
-    - filetag 
+    - filetag
+    - imgproperty 
+    - title
+    - author
     - debug
     - help
     - man 
@@ -98,6 +106,14 @@ Specify an extra tag for the links and file names.
 
 Specify an extra HTML img property for the links.
 
+=item B<-title>
+
+Specify a global title property of the images.
+
+=item B<-author>
+
+Specify a global author property of the images.
+
 =back
 
 =cut
@@ -118,10 +134,10 @@ Examples of this script:
 
 =cut
 
+print "Verbose output option is enabled!\n" if $verbose;
+
 pod2usage( q( -verbose ) => 1 ) if $help;
 pod2usage( -exitval => 0, -verbose => 2 ) if $man;
-
-print "$verbose\n" if $verbose;
 
 # isFileReadable ( filename )
 sub isFileReadable ( $ ) {
@@ -166,7 +182,7 @@ foreach ( `ls -1dt "$directory"/*.jpg | grep _ORIGINAL` ) {
   next if isFileReadable ( "$filename" );
 
   # create a link
-	my $picHTML = "<a href=\"javascript:openPhotoSwipe(); gallery.goTo( $counter );\"><img $imgproperty src=\"".$filename."\"></a>\n";
+	my $picHTML = "<a href=\"javascript:openPhotoSwipe(); gallery.goTo( $counter );\"><img title=\"$globaltitle\" $imgproperty src=\"".$filename."\"></a>\n";
 
   my $modulo = $counter % 4;
 	
@@ -185,8 +201,8 @@ foreach ( `ls -1dt "$directory"/*.jpg | grep _ORIGINAL` ) {
   print ARRAYS "src   : '$originalFilename',\n";
   print ARRAYS "w     : $w,\n";
   print ARRAYS "h     : $h,\n";
-  print ARRAYS "title : 'Fleischmann András',\n";
-  print ARRAYS "author: 'Fleischmann György'\n"; 
+  print ARRAYS "title : '$globaltitle',\n";
+  print ARRAYS "author: '$globalauthor'\n"; 
   print ARRAYS "}";
 
   print "\r$counter" if $verbose;
