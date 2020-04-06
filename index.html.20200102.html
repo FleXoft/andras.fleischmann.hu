@@ -1,0 +1,2186 @@
+<!DOCTYPE html>
+
+<!-- 
+
+#                  _                  __ _      _          _                                   _
+#                 | |                / _| |    (_)        | |                                 | |
+#   __ _ _ __   __| |_ __ __ _ ___  | |_| | ___ _ ___  ___| |__  _ __ ___   __ _ _ __  _ __   | |__  _   _
+#  / _` | '_ \ / _` | '__/ _` / __| |  _| |/ _ \ / __|/ __| '_ \| '_ ` _ \ / _` | '_ \| '_ \  | '_ \| | | |
+# | (_| | | | | (_| | | | (_| \__ \_| | | |  __/ \__ \ (__| | | | | | | | | (_| | | | | | | |_| | | | |_| |
+#  \__,_|_| |_|\__,_|_|  \__,_|___(_)_| |_|\___|_|___/\___|_| |_|_| |_| |_|\__,_|_| |_|_| |_(_)_| |_|\__,_|
+# 
+# ---------------------------------------------------------------------------------------------------------
+ 
+# 
+# Rls: 2018.01.01.  
+#
+
+-->
+
+<html lang="hu-HU">
+
+  <head>
+    
+	<meta charset="utf-8" />
+	
+	<title>Fleischmann András</title>
+
+	<meta name="owner" content="FLEISCHMANN András" />
+	<meta name="author" content="FLEISCHMANN András" />
+	<meta name="description" content="A personal page for Fleischmann András."/>
+	<meta http-equiv="cleartype" content="on">
+
+	<style type="text/css">
+	
+		html {  }
+	
+	    body, p, div { margin: 0; padding: 0; font:40pt 'andale mono',courier,sans-serif;
+	     //border: 1px solid #333;
+	    }
+	    
+	    a:hover {
+	        background: -webkit-linear-gradient(left, #FF0000 0%, #FFFFFF 50%, #00FF00 90%);
+	        background: linear-gradient(to right,     #FF0000 0%, #FFFFFF 50%, #00FF00 90%);
+	        -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent
+	    }
+	    
+		img {
+	    	-webkit-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);					
+	    	-moz-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+	    	box-shadow: 0px 4px 18px rgba(0,0,0,0.84);			
+		}
+		img.zoomeffect {
+			-webkit-transition: all 0.3s ease-out;
+		  	-moz-transition: all 0.3s ease-out;
+		  	transition: all 0.3s ease-out
+		}
+		img.zoomeffect:hover {
+		  	transform: scale(1.03);
+		  	-ms-transform: scale(1.03);
+		  	-webkit-transform: scale(1.03);
+		  	-o-transform: scale(1.03);
+		  	-moz-transform: scale(1.03)
+		}
+		img.zoomeffect:active {
+		   	transform: translateY(4px);
+		}
+
+	    video.shadow {
+			position: relative; 
+
+	    	-webkit-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);					
+	    	-moz-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+	    	box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+					
+			width: 960px; 
+			height: 540px; 
+		
+			overflow: visible;
+			
+			margin: auto;	
+   	    }
+
+	    .wrapper {
+			width: 960px; 
+			height: 540px; 
+		
+			top:0; bottom: 0; left: 0; right: 0;
+			margin: auto;     
+	    }
+
+		.videocontainer {
+		    position: relative;
+		    height: 0;
+		    padding-bottom: 56.25%;
+		    margin-bottom: 1em;
+		}
+
+		.iframeshadow {
+		    position: absolute;
+		    top:  0;
+		    left: 0;
+		    width:  100%;
+		    height: 100%;
+		    
+		    -webkit-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);          
+		    -moz-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+		    box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+		}
+	    
+	    .content {	    
+	        position: absolute;
+	        
+	        top:0; bottom: 0; left: 0; right: 0;
+	        margin: auto;
+		        
+		    padding: 0.5em;
+	    }
+
+		.column {
+		    float: left;
+		    width: 23%;
+		    padding: 1%;
+		}
+
+		.column img {
+		    margin-top   : 0px;
+		    margin-bottom: 8px;
+		    width: 100%;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		    content: "";
+		    display: table;
+		    clear: both;
+		    margin-bottom: 0.5em;
+		}
+
+		/* Responsive layout - makes a two column-layout instead of four columns */
+		@media (max-width: 800px) {
+		    .column {
+		        width: 46%;
+		    }
+		}
+
+		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+		@media (max-width: 600px) {
+		    .column {
+		        width: 100%;
+		   }
+		}
+   	    
+	</style>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108075264-4"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-108075264-4');
+	</script>
+  
+  <!-- PhotoSwipe part 1. -->
+
+  <!-- Core CSS file -->
+  <link rel="stylesheet" href="PhotoSwipe/photoswipe.css"> 
+
+  <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+       In the folder of skin CSS file there are also:
+       - .png and .svg icons sprite, 
+       - preloader.gif (for browsers that do not support CSS animations) -->
+  <link rel="stylesheet" href="PhotoSwipe/default-skin/default-skin.css"> 
+
+  <!-- Core JS file -->
+  <script src="PhotoSwipe/photoswipe.min.js"></script> 
+
+  <!-- UI JS file -->
+  <script src="PhotoSwipe/photoswipe-ui-default.min.js"></script> 
+
+	<link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' /> 
+	<link rel='stylesheet' href='unitegallery/themes/default/ug-theme-default.css' type='text/css' /> 
+
+	<script type='text/javascript' src='unitegallery/js/jquery-11.0.min.js'></script>
+	<script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script> 
+	<script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script>
+
+</head>
+
+<!-- PhotoSwipe must have part 2. -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" style="margin: 0; padding: 0;">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar" style="margin: 0; padding: 0;">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center" style="font-size: 25px; text-align: center;"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- my simple dateDiff script -->
+
+<script type="text/javascript">
+    
+    // main()
+
+    today = new Date();
+    diff  = new Date();
+    
+	/*
+	 * Function to calculate the absolute difference in days, months and years between 2 days taking into account variable month lengths and leap years
+	 * It ignores any time component (ie hours, minutes and seconds)
+	 *
+	 * https://gist.github.com/clecuona/2945438
+	 */
+	function dateDiff( dt1, dt2 )
+	{
+	    /*
+	     * setup 'empty' return object
+	     */
+	    var ret = { days:0, months:0, years:0 };
+
+	    /*
+	     * If the dates are equal, return the 'empty' object
+	     */
+	    if ( dt1 == dt2 ) return ret;
+
+	    /*
+	     * ensure dt2 > dt1
+	     */
+	    if ( dt1 > dt2 )
+	    {
+	        var dtmp = dt2;
+	        dt2 = dt1;
+	        dt1 = dtmp;
+	    }
+
+	    /*
+	     * First get the number of full years
+	     */
+
+	    var year1 = dt1.getFullYear();
+	    var year2 = dt2.getFullYear();
+
+	    var month1 = dt1.getMonth();
+	    var month2 = dt2.getMonth();
+
+	    var day1 = dt1.getDate();
+	    var day2 = dt2.getDate();
+
+	    /*
+	     * Set initial values bearing in mind the months or days may be negative
+	     */
+
+	    ret['years'] = year2 - year1;
+	    ret['months'] = month2 - month1;
+	    ret['days'] = day2 - day1;
+
+	    /*
+	     * Now we deal with the negatives
+	     */
+
+	    /*
+	     * First if the day difference is negative
+	     * eg dt2 = 13 oct, dt1 = 25 sept
+	     */
+	    if ( ret['days'] < 0 )
+	    {
+	        /*
+	         * Use temporary dates to get the number of days remaining in the month
+	         */
+	        var dtmp1 = new Date( dt1.getFullYear(), dt1.getMonth() + 1, 1, 0, 0, -1 );
+
+	        var numDays = dtmp1.getDate();
+
+	        ret['months'] -= 1;
+	        ret['days'] += numDays;
+
+	    }
+
+	    /*
+	     * Now if the month difference is negative
+	     */
+	    if ( ret['months'] < 0 )
+	    {
+	        ret['months'] += 12;
+	        ret['years'] -= 1;
+	    }
+
+	    // Add string conversion
+	    var returnString = "";
+
+		if ( ret['years'] != 0 ) {
+	    	returnString += ret['years'] + " " + ( ( ret['years'] != 1 ) ? "years" : "year" );
+		}
+		
+		if ( ret['years'] != 0 && ret['months'] != 0 ) returnString += ", ";
+
+	 	if ( ret['months'] != 0 ) {
+			returnString += ret['months'] + " " + ( ( ret['months'] != 1 ) ? "months" : "month" );
+	 	}
+	 	
+		if ( (ret['years'] != 0 || ret['months'] != 0 ) && ret['days'] != 0 ) returnString += " and ";
+
+	  	if ( ret['days'] != 0 ) {
+	 	  	returnString += ret['days'] + " " +( ( ret['days'] != 1 ) ? "days" : "day" );
+	  	}
+
+	    return returnString;
+	}
+    
+    function myTimer () {
+    	document.getElementById ( 'andrasBirthDiff' ).innerHTML = dateDiff ( today, new Date( 2017, 09 - 1, 30, 22, 20 ) );
+    }
+    setInterval ( myTimer, 1000 );
+    
+  </script>
+
+  	<body>
+  
+  <div class="content">
+
+<div style="margin: auto; width: 80%; margin-bottom: -26px;"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/InWlFjegNCk" frameborder="0" allowfullscreen></iframe></div></div>
+
+	<p align="center"><a>Fleischmann András 2017-</a></p>
+	<p style="font-size: 14px;" align=center>/* uptime: <span id="andrasBirthDiff">?</span> */</p>
+	
+<hr style="margin-bottom: 0;">
+<center><span style="font-size: 0.5em;">2019</span></center>
+
+<div id="gallery2019" style="display: none; margin-bottom: .7em; margin-left: 1.5%; margin-right: 1.5%; margin-top: .5em;">
+
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/DNRRE3915.png" data-image="photos/andras/2019/DNRRE3915_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-598698404.964801.png" data-image="photos/andras/2019/HipstamaticPhoto-598698404.964801_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-598699787.197025.png" data-image="photos/andras/2019/HipstamaticPhoto-598699787.197025_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-599119745.297729.png" data-image="photos/andras/2019/HipstamaticPhoto-599119745.297729_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-599303044.998274.png" data-image="photos/andras/2019/HipstamaticPhoto-599303044.998274_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-599305896.345012.png" data-image="photos/andras/2019/HipstamaticPhoto-599305896.345012_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/IMG_8015.png" data-image="photos/andras/2019/IMG_8015_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PXZNE2818.png" data-image="photos/andras/2019/PXZNE2818_ORIGINAL.png">
+
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HSRKE4950.png" data-image="photos/andras/2019/HSRKE4950_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-596300890.934723.png" data-image="photos/andras/2019/HipstamaticPhoto-596300890.934723_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/IMG_7873.png" data-image="photos/andras/2019/IMG_7873_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/IMG_7918.png" data-image="photos/andras/2019/IMG_7918_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/LHZUE7941.png" data-image="photos/andras/2019/LHZUE7941_ORIGINAL.png">
+
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/LHQHE3634.png" data-image="photos/andras/2019/LHQHE3634_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/MJXVE3122.png" data-image="photos/andras/2019/MJXVE3122_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PEGAE4496.png" data-image="photos/andras/2019/PEGAE4496_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/QSIME8964.png" data-image="photos/andras/2019/QSIME8964_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/RABLE8358.png" data-image="photos/andras/2019/RABLE8358_ORIGINAL.png">
+
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-593506750.970585.png" data-image="photos/andras/2019/HipstamaticPhoto-593506750.970585_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-593885492.121728.png" data-image="photos/andras/2019/HipstamaticPhoto-593885492.121728_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/KMNIE4664.png" data-image="photos/andras/2019/KMNIE4664_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-593159256.677932.png" data-image="photos/andras/2019/HipstamaticPhoto-593159256.677932_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-593159262.978097.png" data-image="photos/andras/2019/HipstamaticPhoto-593159262.978097_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-593247163.530779.png" data-image="photos/andras/2019/HipstamaticPhoto-593247163.530779_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-593247536.853752.png" data-image="photos/andras/2019/HipstamaticPhoto-593247536.853752_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-593247554.481388.png" data-image="photos/andras/2019/HipstamaticPhoto-593247554.481388_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/NJYKE3010.png" data-image="photos/andras/2019/NJYKE3010_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/BUTFE0056.png" data-image="photos/andras/2019/BUTFE0056_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/DGZBE3307.png" data-image="photos/andras/2019/DGZBE3307_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HMOriginal-EBE6C0CD-D025-4A43-B24F-4F914578A329.png" data-image="photos/andras/2019/HMOriginal-EBE6C0CD-D025-4A43-B24F-4F914578A329_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-592584975.697790.png" data-image="photos/andras/2019/HipstamaticPhoto-592584975.697790_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-592590998.109792.png" data-image="photos/andras/2019/HipstamaticPhoto-592590998.109792_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-592591026.589273.png" data-image="photos/andras/2019/HipstamaticPhoto-592591026.589273_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-592591105.152065.png" data-image="photos/andras/2019/HipstamaticPhoto-592591105.152065_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-592592860.043024.png" data-image="photos/andras/2019/HipstamaticPhoto-592592860.043024_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-592649337.553144.png" data-image="photos/andras/2019/HipstamaticPhoto-592649337.553144_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-592649355.261079.png" data-image="photos/andras/2019/HipstamaticPhoto-592649355.261079_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-592844812.314403.png" data-image="photos/andras/2019/HipstamaticPhoto-592844812.314403_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/JZZME9853.png" data-image="photos/andras/2019/JZZME9853_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/KUMWE5729.png" data-image="photos/andras/2019/KUMWE5729_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/NTMSE5809.png" data-image="photos/andras/2019/NTMSE5809_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/OriginalPhoto-592654967.553222.png" data-image="photos/andras/2019/OriginalPhoto-592654967.553222_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PYWLE0852.png" data-image="photos/andras/2019/PYWLE0852_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/SVGPE5346.png" data-image="photos/andras/2019/SVGPE5346_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/SWDQE4005.png" data-image="photos/andras/2019/SWDQE4005_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/YGJME8668.png" data-image="photos/andras/2019/YGJME8668_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/FCKGE5516.png" data-image="photos/andras/2019/FCKGE5516_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/IFUDE6300.png" data-image="photos/andras/2019/IFUDE6300_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/NWONE8891.png" data-image="photos/andras/2019/NWONE8891_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/QHYOE0571.png" data-image="photos/andras/2019/QHYOE0571_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/QWTWE6745.png" data-image="photos/andras/2019/QWTWE6745_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/WXZDE5602.png" data-image="photos/andras/2019/WXZDE5602_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-589557185.250812.png" data-image="photos/andras/2019/HipstamaticPhoto-589557185.250812_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-589557434.903293.png" data-image="photos/andras/2019/HipstamaticPhoto-589557434.903293_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-589614751.724721.png" data-image="photos/andras/2019/HipstamaticPhoto-589614751.724721_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-589624108.365654.png" data-image="photos/andras/2019/HipstamaticPhoto-589624108.365654_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PICT0001.png" data-image="photos/andras/2019/PICT0001_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PICT0010.png" data-image="photos/andras/2019/PICT0010_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PICT0012.png" data-image="photos/andras/2019/PICT0012_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PICT0017.png" data-image="photos/andras/2019/PICT0017_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PICT0018.png" data-image="photos/andras/2019/PICT0018_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PICT0025.png" data-image="photos/andras/2019/PICT0025_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-586974853.694372.png" data-image="photos/andras/2019/HipstamaticPhoto-586974853.694372_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-586974895.259882.png" data-image="photos/andras/2019/HipstamaticPhoto-586974895.259882_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-586975066.212910.png" data-image="photos/andras/2019/HipstamaticPhoto-586975066.212910_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-587210230.727391.png" data-image="photos/andras/2019/HipstamaticPhoto-587210230.727391_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-587283337.652673.png" data-image="photos/andras/2019/HipstamaticPhoto-587283337.652673_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-587283343.321883.png" data-image="photos/andras/2019/HipstamaticPhoto-587283343.321883_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-587389555.627338.png" data-image="photos/andras/2019/HipstamaticPhoto-587389555.627338_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-588005075.738229.png" data-image="photos/andras/2019/HipstamaticPhoto-588005075.738229_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-588005080.894877.png" data-image="photos/andras/2019/HipstamaticPhoto-588005080.894877_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-588006891.295381.png" data-image="photos/andras/2019/HipstamaticPhoto-588006891.295381_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-588007301.684897.png" data-image="photos/andras/2019/HipstamaticPhoto-588007301.684897_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-588012543.263344.png" data-image="photos/andras/2019/HipstamaticPhoto-588012543.263344_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-588012582.033014.png" data-image="photos/andras/2019/HipstamaticPhoto-588012582.033014_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/IMG_6336.png" data-image="photos/andras/2019/IMG_6336_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/IMG_6687.png" data-image="photos/andras/2019/IMG_6687_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-580551510.814623.jpg" data-image="photos/andras/2019/HipstamaticPhoto-580551510.814623_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-580551557.532985.jpg" data-image="photos/andras/2019/HipstamaticPhoto-580551557.532985_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-581062352.833941.jpg" data-image="photos/andras/2019/HipstamaticPhoto-581062352.833941_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-581062385.737504.jpg" data-image="photos/andras/2019/HipstamaticPhoto-581062385.737504_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-581062415.199012.jpg" data-image="photos/andras/2019/HipstamaticPhoto-581062415.199012_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-581062492.964686.jpg" data-image="photos/andras/2019/HipstamaticPhoto-581062492.964686_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-581437176.307677.jpg" data-image="photos/andras/2019/HipstamaticPhoto-581437176.307677_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-581439055.406790.jpg" data-image="photos/andras/2019/HipstamaticPhoto-581439055.406790_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-581439062.100707.jpg" data-image="photos/andras/2019/HipstamaticPhoto-581439062.100707_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/OriginalPhoto-581437170.876849.jpg" data-image="photos/andras/2019/OriginalPhoto-581437170.876849_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-577616494.937927.jpg" data-image="photos/andras/2019/HipstamaticPhoto-577616494.937927_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-578387560.640365.jpg" data-image="photos/andras/2019/HipstamaticPhoto-578387560.640365_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-578467295.579801.jpg" data-image="photos/andras/2019/HipstamaticPhoto-578467295.579801_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-578476279.991026.jpg" data-image="photos/andras/2019/HipstamaticPhoto-578476279.991026_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-578476761.298771.jpg" data-image="photos/andras/2019/HipstamaticPhoto-578476761.298771_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-578476768.834506.jpg" data-image="photos/andras/2019/HipstamaticPhoto-578476768.834506_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-579360255.567956.jpg" data-image="photos/andras/2019/HipstamaticPhoto-579360255.567956_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-579360671.034482.jpg" data-image="photos/andras/2019/HipstamaticPhoto-579360671.034482_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-579361356.182499.jpg" data-image="photos/andras/2019/HipstamaticPhoto-579361356.182499_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/OriginalPhoto-578467300.962126.jpg" data-image="photos/andras/2019/OriginalPhoto-578467300.962126_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PICT0022.jpg" data-image="photos/andras/2019/PICT0022_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-576947357.591823.jpg" data-image="photos/andras/2019/HipstamaticPhoto-576947357.591823_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-577346165.539619.jpg" data-image="photos/andras/2019/HipstamaticPhoto-577346165.539619_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-577347220.633271.jpg" data-image="photos/andras/2019/HipstamaticPhoto-577347220.633271_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-577347255.324915.jpg" data-image="photos/andras/2019/HipstamaticPhoto-577347255.324915_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-577359223.471096.jpg" data-image="photos/andras/2019/HipstamaticPhoto-577359223.471096_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/IMG_3924.jpg" data-image="photos/andras/2019/IMG_3924_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PICT0018.jpg" data-image="photos/andras/2019/PICT0018_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PICT0029_2.jpg" data-image="photos/andras/2019/PICT0029_2_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PICT0044.jpg" data-image="photos/andras/2019/PICT0044_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PICT0047.jpg" data-image="photos/andras/2019/PICT0047_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PICT0054.jpg" data-image="photos/andras/2019/PICT0054_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-575488715.686886.jpg" data-image="photos/andras/2019/HipstamaticPhoto-575488715.686886_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-575488717.210512.jpg" data-image="photos/andras/2019/HipstamaticPhoto-575488717.210512_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-575488724.960572.jpg" data-image="photos/andras/2019/HipstamaticPhoto-575488724.960572_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-575488740.184113.jpg" data-image="photos/andras/2019/HipstamaticPhoto-575488740.184113_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-573230181.207923.jpg" data-image="photos/andras/2019/HipstamaticPhoto-573230181.207923_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-574069040.236716.jpg" data-image="photos/andras/2019/HipstamaticPhoto-574069040.236716_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-574069219.153905.jpg" data-image="photos/andras/2019/HipstamaticPhoto-574069219.153905_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-574326050.921524.jpg" data-image="photos/andras/2019/HipstamaticPhoto-574326050.921524_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/EVXME1796.jpg" data-image="photos/andras/2019/EVXME1796_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/FZTIE8355.jpg" data-image="photos/andras/2019/FZTIE8355_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-572439289.486651.jpg" data-image="photos/andras/2019/HipstamaticPhoto-572439289.486651_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-572724381.167803.jpg" data-image="photos/andras/2019/HipstamaticPhoto-572724381.167803_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/HipstamaticPhoto-572724399.014889.jpg" data-image="photos/andras/2019/HipstamaticPhoto-572724399.014889_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PICT0028.jpg" data-image="photos/andras/2019/PICT0028_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PICT0029.jpg" data-image="photos/andras/2019/PICT0029_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/PICT0032.jpg" data-image="photos/andras/2019/PICT0032_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/CPANE6185.jpg" data-image="photos/andras/2019/CPANE6185_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/IMG_3554.jpg" data-image="photos/andras/2019/IMG_3554_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/IMG_3558.jpg" data-image="photos/andras/2019/IMG_3558_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/IMG_3560.jpg" data-image="photos/andras/2019/IMG_3560_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/IMG_3561.jpg" data-image="photos/andras/2019/IMG_3561_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/IMG_3563.jpg" data-image="photos/andras/2019/IMG_3563_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/IMG_3564.jpg" data-image="photos/andras/2019/IMG_3564_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/IMG_3565.jpg" data-image="photos/andras/2019/IMG_3565_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/IMG_3569.jpg" data-image="photos/andras/2019/IMG_3569_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/OGIRE6733.jpg" data-image="photos/andras/2019/OGIRE6733_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/OriginalPhoto-570178655.360532.jpg" data-image="photos/andras/2019/OriginalPhoto-570178655.360532_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/OriginalPhoto-570178662.780499.jpg" data-image="photos/andras/2019/OriginalPhoto-570178662.780499_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/OriginalPhoto-570178670.331165.jpg" data-image="photos/andras/2019/OriginalPhoto-570178670.331165_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2019/OriginalPhoto-570178675.230804.jpg" data-image="photos/andras/2019/OriginalPhoto-570178675.230804_ORIGINAL.jpg">
+
+</div>
+
+<script type="text/javascript"> 
+											   
+	jQuery( document ).ready( function() { jQuery( "#gallery2019" ).unitegallery( {
+
+
+		tiles_space_between_cols:      10,
+		tiles_justified_space_between: 10,
+		//tiles_col_width:               500,
+		tile_enable_shadow:            true,
+			tile_shadow_h: 			   3,			//position of horizontal shadow
+			tile_shadow_v: 			   3,			//position of vertical shadow
+			tile_shadow_blur: 		   5,			//shadow blur
+			tile_shadow_spread: 	   2,			//shadow spread
+			tile_shadow_color: 		   "#2B2B2B",	//shadow color
+
+		theme_gallery_padding:         0,
+		tiles_type: 				   "justified",
+
+		gallery_width: 				   "100%",
+		tiles_exact_width: 			   false,
+
+		gallery_control_keyboard:      true,
+
+	} ) } );
+
+</script>
+
+	<p style="font-size: 14px;"> &nbsp;</p>
+
+	<div style="margin: auto; width: 80%; margin-bottom: -26px;"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/lQ-argf6qjA" frameborder="0" allowfullscreen></iframe></div></div>
+
+<hr style="margin-bottom: 0;">
+<center><span style="font-size: 0.5em;">2018</span></center>
+
+	<p style="font-size: 14px;"> &nbsp;</p>
+
+	<div style="margin: auto; width: 80%; margin-bottom: -26px;"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/87aFd5f1mSI" frameborder="0" allowfullscreen></iframe></div></div>
+
+	<div style="margin: auto; width: 80%; margin-bottom: -26px;"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/5Gr6peFI0ag" frameborder="0" allowfullscreen></iframe></div></div>
+		
+	<div style="margin: auto; width: 80%; margin-bottom: -26px;"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/6aKqjhRmANU" frameborder="0" allowfullscreen></iframe></div></div>
+
+	<div style="margin: auto; width: 80%; margin-bottom: -26px;"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/GlYINZ0Vo8o" frameborder="0" allowfullscreen></iframe></div></div>
+
+<div class="row"> 
+  <div class="column">
+
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 0 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-567963986.165404.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 4 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-567429601.143227.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 8 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-567429488.434825.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 12 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-567429382.737891.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 16 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-566660650.183686.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 20 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-564831563.890889.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 24 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-564831492.392145.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 28 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-563307635.441124.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 32 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-563013438.005154.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 36 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-561800038.379992.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 40 );"><img title="Fleischmann András"  src="photos/andras/Andras_1Y.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 44 );"><img title="Fleischmann András"  src="photos/andras/PICT0022x.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 48 );"><img title="Fleischmann András"  src="photos/andras/PICT0026.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 52 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-555609625.181748.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 56 );"><img title="Fleischmann András"  src="photos/andras/PICT0003.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 60 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-555160663.311556.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 64 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-555160109.737117.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 68 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-553443836.342946.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 72 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-552991430.519033.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 76 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-552810186.311342.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 80 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-551380282.675948.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 84 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-551284349.563489.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 88 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-551379162.329883.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 92 );"><img title="Fleischmann András"  src="photos/andras/PICT0011.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 96 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-550335040.458681.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 100 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-550335225.613464.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 104 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-550081374.094310.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 108 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-549104196.921091.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 112 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-547669904.663475.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 116 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-546104299.131488.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 120 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-546104229.512977.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 124 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-546104314.455248.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 128 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-545331056.972809.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 132 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-542139511.145072.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 136 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-544349939.115251.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 140 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-542132534.296928.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 144 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-542132734.687418.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 148 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-541168784.800895.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 152 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-538905555.997308.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 156 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-537563932.261973.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 160 );"><img title="Fleischmann András"  src="photos/andras/PICT0022.jpg"></a>
+
+  </div>
+  <div class="column">
+
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 1 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-568983249.633894.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 5 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-567429586.214358.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 9 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-567429434.995539.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 13 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-567429374.465211.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 17 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-566657606.469525.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 21 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-564831543.669636.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 25 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-563443803.232505.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 29 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-563013735.613663.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 33 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-563013424.933497.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 37 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-561821138.595618.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 41 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-559503690.404370.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 45 );"><img title="Fleischmann András"  src="photos/andras/PICT0006.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 49 );"><img title="Fleischmann András"  src="photos/andras/PICT0030.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 53 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-555609620.740140.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 57 );"><img title="Fleischmann András"  src="photos/andras/PICT0033.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 61 );"><img title="Fleischmann András"  src="photos/andras/PICT0055.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 65 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-555160087.174238.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 69 );"><img title="Fleischmann András"  src="photos/andras/PICT0023.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 73 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-552936091.000470.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 77 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-552809760.582877.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 81 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-551284335.679421.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 85 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-551355548.357657.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 89 );"><img title="Fleischmann András"  src="photos/andras/PICT0039.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 93 );"><img title="Fleischmann András"  src="photos/andras/IMG_8789.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 97 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-550335290.161709.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 101 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-550335064.513928.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 105 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-549104143.976278.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 109 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-549104210.942803.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 113 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-547669916.291832.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 117 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-546104745.123122.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 121 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-546104237.979988.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 125 );"><img title="Fleischmann András"  src="photos/andras/IMG_0781.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 129 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-545115639.594855.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 133 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-542139533.066319.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 137 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-544349955.855868.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 141 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-542132710.209131.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 145 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-540930611.270768.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 149 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-541234432.980360.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 153 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-538040190.205535.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 157 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-537563964.430652.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 161 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-537563894.166426.jpg"></a>
+
+  </div>
+  <div class="column">
+
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 2 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-567854921.879361.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 6 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-567429504.480868.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 10 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-567429413.389020.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 14 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-566657613.583674.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 18 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-566657673.150126.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 22 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-564831520.630023.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 26 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-563308048.795005.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 30 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-563013722.843569.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 34 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-561578349.922674.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 38 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-561822922.351496.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 42 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-559503688.235639.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 46 );"><img title="Fleischmann András"  src="photos/andras/PICT0015.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 50 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-555744888.910977.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 54 );"><img title="Fleischmann András"  src="photos/andras/PICT0009.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 58 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-551350732.160705.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 62 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-555160668.023083.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 66 );"><img title="Fleischmann András"  src="photos/andras/OriginalPhoto-553530308.649999.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 70 );"><img title="Fleischmann András"  src="photos/andras/PICT0005.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 74 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-552936043.762734.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 78 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-552809207.484726.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 82 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-551114501.499062.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 86 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-551355540.875160.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 90 );"><img title="Fleischmann András"  src="photos/andras/PICT0034.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 94 );"><img title="Fleischmann András"  src="photos/andras/IMG_8409.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 98 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-550335316.720316.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 102 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-550083650.876991.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 106 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-549104219.138029.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 110 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-547669928.980866.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 114 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-547669966.753100.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 118 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-546104212.821442.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 122 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-546104245.332319.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 126 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-545331246.185643.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 130 );"><img title="Fleischmann András"  src="photos/andras/IMG_4586.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 134 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-542455538.172725.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 138 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-544349967.542513.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 142 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-542132719.252643.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 146 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-540930635.998068.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 150 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-541234498.215577.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 154 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-538172414.545046.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 158 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-537563976.981756.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 162 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-537564102.742688.jpg"></a>
+
+  </div>
+  <div class="column">
+
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 3 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-567429631.562575.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 7 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-567429496.141968.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 11 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-567429394.357654.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 15 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-566657640.599325.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 19 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-564842856.232122.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 23 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-564831502.548441.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 27 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-563307588.825167.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 31 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-563013709.249864.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 35 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-561746529.079665.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 39 );"><img title="Fleischmann András"  src="photos/andras/OriginalPhoto-561746541.646412.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 43 );"><img title="Fleischmann András"  src="photos/andras/PICT0036.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 47 );"><img title="Fleischmann András"  src="photos/andras/PICT0023x.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 51 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-555744905.199254.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 55 );"><img title="Fleischmann András"  src="photos/andras/IMG_0978.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 59 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-553683796.241591.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 63 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-555160156.606588.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 67 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-553529309.490697.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 71 );"><img title="Fleischmann András"  src="photos/andras/PICT0002.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 75 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-552810631.372963.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 79 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-552809192.176390.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 83 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-551114471.203205.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 87 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-551379156.351150.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 91 );"><img title="Fleischmann András"  src="photos/andras/PICT0019.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 95 );"><img title="Fleischmann András"  src="photos/andras/IMG_8846.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 99 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-550335228.447476.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 103 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-550083632.595949.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 107 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-549104135.983141.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 111 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-547669971.861611.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 115 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-546104292.531155.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 119 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-546104226.872233.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 123 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-546104270.229947.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 127 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-545331145.953787.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 131 );"><img title="Fleischmann András"  src="photos/andras/PICT0024.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 135 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-542489912.626501.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 139 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-544364686.251606.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 143 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-542132731.539702.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 147 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-541158579.007018.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 151 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-538904973.558219.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 155 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-538172680.542122.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 159 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-537564279.986055.jpg"></a>
+<a href="javascript:openPhotoSwipe(); gallery.goTo( 163 );"><img title="Fleischmann András"  src="photos/andras/HipstamaticPhoto-537564170.517063.jpg"></a>
+
+  </div>
+</div>
+
+<div style="margin: auto; width: 80%""><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/V-yyQSh99GU" frameborder="0" allowfullscreen></iframe></div></div>
+
+<div style="margin: auto; width: 80%""><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/G7m9tkDun7Q" frameborder="0" allowfullscreen></iframe></div></div>
+
+<div style="margin: auto; width: 80%"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/TxEV_PLaews" frameborder="0" allowfullscreen></iframe></div></div>
+
+<div style="margin: auto; width: 80%"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/wZsaxDncVfI" frameborder="0" allowfullscreen></iframe></div></div>
+
+<div style="margin: auto; width: 80%"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/R38svmJK3xA" frameborder="0" allowfullscreen></iframe></div></div>
+
+<hr style="margin-bottom: 0;">
+<center><span style="font-size: 0.5em;">2017</span></center>
+
+<div class="row"> 
+  <div class="column">
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 0 );"><img src="photos/andras/2017/IMG_9150.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 4 );"><img src="photos/andras/2017/PICT0076.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 8 );"><img src="photos/andras/2017/IMG_9178.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 12 );"><img src="photos/andras/2017/IMG_9202.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 16 );"><img src="photos/andras/2017/IMG_9032.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 20 );"><img src="photos/andras/2017/IMG_8361.jpg"></a>
+
+  </div>
+  <div class="column">
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 1 );"><img src="photos/andras/2017/IMG_9151.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 5 );"><img src="photos/andras/2017/PICT0087.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 9 );"><img src="photos/andras/2017/IMG_9181.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 13 );"><img src="photos/andras/2017/IMG_9205.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 17 );"><img src="photos/andras/2017/IMG_9090.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 21 );"><img src="photos/andras/2017/IMG_8424.jpg"></a>
+
+  </div>
+  <div class="column">
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 2 );"><img src="photos/andras/2017/IMG_9103.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 6 );"><img src="photos/andras/2017/IMG_9149.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 10 );"><img src="photos/andras/2017/IMG_9200.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 14 );"><img src="photos/andras/2017/IMG_9072.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 18 );"><img src="photos/andras/2017/IMG_4044.jpg"></a>
+
+  </div> 
+  <div class="column">
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 3 );"><img src="photos/andras/2017/PICT0059.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 7 );"><img src="photos/andras/2017/IMG_9176.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 11 );"><img src="photos/andras/2017/IMG_9201.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 15 );"><img src="photos/andras/2017/IMG_9022.jpg"></a>
+<a href="javascript:openPhotoSwipe_2017(); gallery.goTo( 19 );"><img src="photos/andras/2017/IMG_8825.jpg"></a>
+
+  </div>
+</div>
+
+	<div style="margin: auto; width: 80%"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/1Z2rQ3_V8v4" frameborder="0" allowfullscreen></iframe></div></div>
+
+	<div style="margin: auto; width: 80%"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/_naWJjFmz5k" frameborder="0" allowfullscreen></iframe></div></div>
+    
+    <br style="clear: both;">
+
+  </div>
+
+<script type="text/javascript">
+
+  var gallery;
+
+  var openPhotoSwipe = function() {
+  var pswpElement = document.querySelectorAll('.pswp')[0];
+
+    // build items array
+  var items = [
+{
+src   : 'photos/andras/HipstamaticPhoto-567963986.165404_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-568983249.633894_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-567854921.879361_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-567429631.562575_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-567429601.143227_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-567429586.214358_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-567429504.480868_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-567429496.141968_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-567429488.434825_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-567429434.995539_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-567429413.389020_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-567429394.357654_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-567429382.737891_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-567429374.465211_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-566657613.583674_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-566657640.599325_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-566660650.183686_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-566657606.469525_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-566657673.150126_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-564842856.232122_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-564831563.890889_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-564831543.669636_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-564831520.630023_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-564831502.548441_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-564831492.392145_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-563443803.232505_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-563308048.795005_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-563307588.825167_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-563307635.441124_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-563013735.613663_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-563013722.843569_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-563013709.249864_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-563013438.005154_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-563013424.933497_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-561578349.922674_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-561746529.079665_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-561800038.379992_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-561821138.595618_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-561822922.351496_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/OriginalPhoto-561746541.646412_ORIGINAL.jpg',
+w     : 3264,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/Andras_1Y_ORIGINAL.jpg',
+w     : 480,
+h     : 640,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-559503690.404370_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-559503688.235639_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0036_ORIGINAL.jpg',
+w     : 3008,
+h     : 2000,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0022x_ORIGINAL.jpg',
+w     : 3008,
+h     : 2000,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0006_ORIGINAL.jpg',
+w     : 2000,
+h     : 3008,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0015_ORIGINAL.jpg',
+w     : 3008,
+h     : 2000,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0023x_ORIGINAL.jpg',
+w     : 3008,
+h     : 2000,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0026_ORIGINAL.jpg',
+w     : 3008,
+h     : 2000,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0030_ORIGINAL.jpg',
+w     : 3008,
+h     : 2000,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-555744888.910977_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-555744905.199254_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-555609625.181748_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-555609620.740140_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0009_ORIGINAL.jpg',
+w     : 2520,
+h     : 1676,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/IMG_0978_ORIGINAL.jpg',
+w     : 969,
+h     : 726,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0003_ORIGINAL.jpg',
+w     : 1157,
+h     : 769,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0033_ORIGINAL.jpg',
+w     : 1046,
+h     : 695,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-551350732.160705_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-553683796.241591_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-555160663.311556_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0055_ORIGINAL.jpg',
+w     : 1280,
+h     : 851,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-555160668.023083_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-555160156.606588_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-555160109.737117_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-555160087.174238_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/OriginalPhoto-553530308.649999_ORIGINAL.jpg',
+w     : 1280,
+h     : 960,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-553529309.490697_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-553443836.342946_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0023_ORIGINAL.jpg',
+w     : 1280,
+h     : 851,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0005_ORIGINAL.jpg',
+w     : 1280,
+h     : 851,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0002_ORIGINAL.jpg',
+w     : 1280,
+h     : 851,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-552991430.519033_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-552936091.000470_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-552936043.762734_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-552810631.372963_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-552810186.311342_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-552809760.582877_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-552809207.484726_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-552809192.176390_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-551380282.675948_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-551284335.679421_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-551114501.499062_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-551114471.203205_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-551284349.563489_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-551355548.357657_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-551355540.875160_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-551379156.351150_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-551379162.329883_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0039_ORIGINAL.jpg',
+w     : 1234,
+h     : 821,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0034_ORIGINAL.jpg',
+w     : 851,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0019_ORIGINAL.jpg',
+w     : 1280,
+h     : 851,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0011_ORIGINAL.jpg',
+w     : 660,
+h     : 994,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/IMG_8789_ORIGINAL.jpg',
+w     : 2753,
+h     : 2065,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/IMG_8409_ORIGINAL.jpg',
+w     : 2448,
+h     : 3264,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/IMG_8846_ORIGINAL.jpg',
+w     : 3264,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-550335040.458681_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-550335290.161709_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-550335316.720316_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-550335228.447476_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-550335225.613464_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-550335064.513928_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-550083650.876991_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-550083632.595949_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-550081374.094310_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-549104143.976278_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-549104219.138029_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-549104135.983141_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-549104196.921091_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-549104210.942803_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-547669928.980866_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-547669971.861611_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-547669904.663475_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-547669916.291832_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-547669966.753100_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-546104292.531155_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-546104299.131488_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-546104745.123122_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-546104212.821442_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-546104226.872233_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-546104229.512977_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-546104237.979988_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-546104245.332319_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-546104270.229947_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-546104314.455248_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/IMG_0781_ORIGINAL.jpg',
+w     : 960,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-545331246.185643_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-545331145.953787_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-545331056.972809_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-545115639.594855_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/IMG_4586_ORIGINAL.jpg',
+w     : 960,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0024_ORIGINAL.jpg',
+w     : 851,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-542139511.145072_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-542139533.066319_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-542455538.172725_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-542489912.626501_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-544349939.115251_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-544349955.855868_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-544349967.542513_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-544364686.251606_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-542132534.296928_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-542132710.209131_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-542132719.252643_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-542132731.539702_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-542132734.687418_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-540930611.270768_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-540930635.998068_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-541158579.007018_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-541168784.800895_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-541234432.980360_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-541234498.215577_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-538904973.558219_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-538905555.997308_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-538040190.205535_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-538172414.545046_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-538172680.542122_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-537563932.261973_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-537563964.430652_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-537563976.981756_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-537564279.986055_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/PICT0022_ORIGINAL.jpg',
+w     : 1280,
+h     : 851,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-537563894.166426_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-537564102.742688_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/HipstamaticPhoto-537564170.517063_ORIGINAL.jpg',
+w     : 1280,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+}];
+
+    
+    // define options (if needed)
+    var options = {
+        // history & focus options are disabled on CodePen        
+        history: false,
+        focus: false,
+
+        bgOpacity: 0.96,
+
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+        
+    };
+    
+    gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+    
+  };
+
+  var openPhotoSwipe_2017 = function() {
+  var pswpElement = document.querySelectorAll('.pswp')[0];
+
+    // build items array
+  var items = [
+{
+src   : 'photos/andras/2017/IMG_9150_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_9151_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_9103_ORIGINAL.jpg',
+w     : 960,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/PICT0059_ORIGINAL.jpg',
+w     : 851,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/PICT0076_ORIGINAL.jpg',
+w     : 851,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/PICT0087_ORIGINAL.jpg',
+w     : 1280,
+h     : 851,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_9149_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_9176_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_9178_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_9181_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_9200_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_9201_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_9202_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_9205_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_9072_ORIGINAL.jpg',
+w     : 960,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_9022_ORIGINAL.jpg',
+w     : 960,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_9032_ORIGINAL.jpg',
+w     : 960,
+h     : 1280,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_9090_ORIGINAL.jpg',
+w     : 1280,
+h     : 960,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_4044_ORIGINAL.jpg',
+w     : 460,
+h     : 528,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_8825_ORIGINAL.jpg',
+w     : 2448,
+h     : 2448,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_8361_ORIGINAL.jpg',
+w     : 1280,
+h     : 960,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+},
+{
+src   : 'photos/andras/2017/IMG_8424_ORIGINAL.jpg',
+w     : 1280,
+h     : 960,
+title : 'Fleischmann András',
+author: 'Fleischmann György'
+}];
+
+    
+    // define options (if needed)
+    var options = {
+        // history & focus options are disabled on CodePen        
+        history: false,
+        focus: false,
+
+        bgOpacity: 0.96,
+
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+        
+    };
+    
+    gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+    
+  };
+
+  //openPhotoSwipe();
+  //document.getElementById('btn').onclick = openPhotoSwipe;
+
+</script>
+
+ 	</body>
+  
+</html>
