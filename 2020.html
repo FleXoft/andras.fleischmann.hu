@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<!-- 
+
+#                  _                  __ _      _          _                                   _
+#                 | |                / _| |    (_)        | |                                 | |
+#   __ _ _ __   __| |_ __ __ _ ___  | |_| | ___ _ ___  ___| |__  _ __ ___   __ _ _ __  _ __   | |__  _   _
+#  / _` | '_ \ / _` | '__/ _` / __| |  _| |/ _ \ / __|/ __| '_ \| '_ ` _ \ / _` | '_ \| '_ \  | '_ \| | | |
+# | (_| | | | | (_| | | | (_| \__ \_| | | |  __/ \__ \ (__| | | | | | | | | (_| | | | | | | |_| | | | |_| |
+#  \__,_|_| |_|\__,_|_|  \__,_|___(_)_| |_|\___|_|___/\___|_| |_|_| |_| |_|\__,_|_| |_|_| |_(_)_| |_|\__,_|
+# 
+# ---------------------------------------------------------------------------------------------------------
+ 
+# 
+# Rls: 2018.01.01.  
+#
+
+-->
+
+<html lang="hu-HU">
+
+  <head>
+    
+	<meta charset="utf-8" />
+	
+	<title>Fleischmann András</title>
+
+	<meta name="owner" content="FLEISCHMANN András" />
+	<meta name="author" content="FLEISCHMANN András" />
+	<meta name="description" content="A personal page for Fleischmann András."/>
+	<meta http-equiv="cleartype" content="on">
+
+	<style type="text/css">
+	
+		html {  }
+	
+	    body, p, div { margin: 0; padding: 0; font:40pt 'andale mono',courier,sans-serif;
+	     //border: 1px solid #333;
+	    }
+	    
+	    a:hover {
+	        background: -webkit-linear-gradient(left, #FF0000 0%, #FFFFFF 50%, #00FF00 90%);
+	        background: linear-gradient(to right,     #FF0000 0%, #FFFFFF 50%, #00FF00 90%);
+	        -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent
+	    }
+	    
+		img {
+	    	-webkit-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);					
+	    	-moz-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+	    	box-shadow: 0px 4px 18px rgba(0,0,0,0.84);			
+		}
+		img.zoomeffect {
+			-webkit-transition: all 0.3s ease-out;
+		  	-moz-transition: all 0.3s ease-out;
+		  	transition: all 0.3s ease-out
+		}
+		img.zoomeffect:hover {
+		  	transform: scale(1.03);
+		  	-ms-transform: scale(1.03);
+		  	-webkit-transform: scale(1.03);
+		  	-o-transform: scale(1.03);
+		  	-moz-transform: scale(1.03)
+		}
+		img.zoomeffect:active {
+		   	transform: translateY(4px);
+		}
+
+	    video.shadow {
+			position: relative; 
+
+	    	-webkit-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);					
+	    	-moz-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+	    	box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+					
+			width: 960px; 
+			height: 540px; 
+		
+			overflow: visible;
+			
+			margin: auto;	
+   	    }
+
+	    .wrapper {
+			width: 960px; 
+			height: 540px; 
+		
+			top:0; bottom: 0; left: 0; right: 0;
+			margin: auto;     
+	    }
+
+		.videocontainer {
+		    position: relative;
+		    height: 0;
+		    padding-bottom: 56.25%;
+		    margin-bottom: 1em;
+		}
+
+		.iframeshadow {
+		    position: absolute;
+		    top:  0;
+		    left: 0;
+		    width:  100%;
+		    height: 100%;
+		    
+		    -webkit-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);          
+		    -moz-box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+		    box-shadow: 0px 4px 18px rgba(0,0,0,0.84);
+		}
+	    
+	    .content {	    
+	        position: absolute;
+	        
+	        top:0; bottom: 0; left: 0; right: 0;
+	        margin: auto;
+		        
+		    padding: 0.5em;
+	    }
+
+		.column {
+		    float: left;
+		    width: 23%;
+		    padding: 1%;
+		}
+
+		.column img {
+		    margin-top   : 0px;
+		    margin-bottom: 8px;
+		    width: 100%;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		    content: "";
+		    display: table;
+		    clear: both;
+		    margin-bottom: 0.5em;
+		}
+
+		/* Responsive layout - makes a two column-layout instead of four columns */
+		@media (max-width: 800px) {
+		    .column {
+		        width: 46%;
+		    }
+		}
+
+		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+		@media (max-width: 600px) {
+		    .column {
+		        width: 100%;
+		   }
+		}
+   	    
+	</style>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108075264-4"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-108075264-4');
+	</script>
+  
+  <!-- PhotoSwipe part 1. -->
+
+  <!-- Core CSS file -->
+  <link rel="stylesheet" href="PhotoSwipe/photoswipe.css"> 
+
+  <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+       In the folder of skin CSS file there are also:
+       - .png and .svg icons sprite, 
+       - preloader.gif (for browsers that do not support CSS animations) -->
+  <link rel="stylesheet" href="PhotoSwipe/default-skin/default-skin.css"> 
+
+  <!-- Core JS file -->
+  <script src="PhotoSwipe/photoswipe.min.js"></script> 
+
+  <!-- UI JS file -->
+  <script src="PhotoSwipe/photoswipe-ui-default.min.js"></script> 
+
+	<link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' /> 
+	<link rel='stylesheet' href='unitegallery/themes/default/ug-theme-default.css' type='text/css' /> 
+
+	<script type='text/javascript' src='unitegallery/js/jquery-11.0.min.js'></script>
+	<script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script> 
+	<script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script>
+
+</head>
+
+<!-- PhotoSwipe must have part 2. -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" style="margin: 0; padding: 0;">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar" style="margin: 0; padding: 0;">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center" style="font-size: 25px; text-align: center;"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- my simple dateDiff script -->
+
+<script type="text/javascript">
+    
+    // main()
+
+    today = new Date();
+    diff  = new Date();
+    
+	/*
+	 * Function to calculate the absolute difference in days, months and years between 2 days taking into account variable month lengths and leap years
+	 * It ignores any time component (ie hours, minutes and seconds)
+	 *
+	 * https://gist.github.com/clecuona/2945438
+	 */
+	function dateDiff( dt1, dt2 )
+	{
+	    /*
+	     * setup 'empty' return object
+	     */
+	    var ret = { days:0, months:0, years:0 };
+
+	    /*
+	     * If the dates are equal, return the 'empty' object
+	     */
+	    if ( dt1 == dt2 ) return ret;
+
+	    /*
+	     * ensure dt2 > dt1
+	     */
+	    if ( dt1 > dt2 )
+	    {
+	        var dtmp = dt2;
+	        dt2 = dt1;
+	        dt1 = dtmp;
+	    }
+
+	    /*
+	     * First get the number of full years
+	     */
+
+	    var year1 = dt1.getFullYear();
+	    var year2 = dt2.getFullYear();
+
+	    var month1 = dt1.getMonth();
+	    var month2 = dt2.getMonth();
+
+	    var day1 = dt1.getDate();
+	    var day2 = dt2.getDate();
+
+	    /*
+	     * Set initial values bearing in mind the months or days may be negative
+	     */
+
+	    ret['years'] = year2 - year1;
+	    ret['months'] = month2 - month1;
+	    ret['days'] = day2 - day1;
+
+	    /*
+	     * Now we deal with the negatives
+	     */
+
+	    /*
+	     * First if the day difference is negative
+	     * eg dt2 = 13 oct, dt1 = 25 sept
+	     */
+	    if ( ret['days'] < 0 )
+	    {
+	        /*
+	         * Use temporary dates to get the number of days remaining in the month
+	         */
+	        var dtmp1 = new Date( dt1.getFullYear(), dt1.getMonth() + 1, 1, 0, 0, -1 );
+
+	        var numDays = dtmp1.getDate();
+
+	        ret['months'] -= 1;
+	        ret['days'] += numDays;
+
+	    }
+
+	    /*
+	     * Now if the month difference is negative
+	     */
+	    if ( ret['months'] < 0 )
+	    {
+	        ret['months'] += 12;
+	        ret['years'] -= 1;
+	    }
+
+	    // Add string conversion
+	    var returnString = "";
+
+		if ( ret['years'] != 0 ) {
+	    	returnString += ret['years'] + " " + ( ( ret['years'] != 1 ) ? "years" : "year" );
+		}
+		
+		if ( ret['years'] != 0 && ret['months'] != 0 ) returnString += ", ";
+
+	 	if ( ret['months'] != 0 ) {
+			returnString += ret['months'] + " " + ( ( ret['months'] != 1 ) ? "months" : "month" );
+	 	}
+	 	
+		if ( (ret['years'] != 0 || ret['months'] != 0 ) && ret['days'] != 0 ) returnString += " and ";
+
+	  	if ( ret['days'] != 0 ) {
+	 	  	returnString += ret['days'] + " " +( ( ret['days'] != 1 ) ? "days" : "day" );
+	  	}
+
+	    return returnString;
+	}
+    
+    function myTimer () {
+    	document.getElementById ( 'andrasBirthDiff' ).innerHTML = dateDiff ( today, new Date( 2017, 09 - 1, 30, 22, 20 ) );
+    }
+    setInterval ( myTimer, 1000 );
+    
+  </script>
+
+  	<body>
+  
+  <div class="content">
+
+<div style="margin: auto; width: 80%; margin-bottom: -26px;"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/-FJqmz_UqCQ" frameborder="0" allowfullscreen></iframe></div></div>
+
+	<p align="center"><a>Fleischmann András 2017-</a></p>
+	<p style="font-size: 14px;" align=center>/* uptime: <span id="andrasBirthDiff">?</span> */</p>
+	
+<hr style="margin-bottom: 0;">
+
+<center><span style="font-size: 0.5em;">2020</span></center>
+
+<div id="gallery2020" style="display: none; margin-bottom: .7em; margin-left: 1.5%; margin-right: 1.5%; margin-top: .5em;">
+
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/AJXK5042.png" data-image="photos/andras/2020/AJXK5042_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/EUTH8455.png" data-image="photos/andras/2020/EUTH8455_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/IMG_1775.png" data-image="photos/andras/2020/IMG_1775_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/KVTN5495.png" data-image="photos/andras/2020/KVTN5495_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/LISI1837.png" data-image="photos/andras/2020/LISI1837_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/NZHJ8303.png" data-image="photos/andras/2020/NZHJ8303_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/TZGB9329.png" data-image="photos/andras/2020/TZGB9329_ORIGINAL.png">
+
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/AJHS1043.png" data-image="photos/andras/2020/AJHS1043_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/EQNL7477.png" data-image="photos/andras/2020/EQNL7477_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/IMG_1184.png" data-image="photos/andras/2020/IMG_1184_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/JOUT7322.png" data-image="photos/andras/2020/JOUT7322_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/LNJI8969.png" data-image="photos/andras/2020/LNJI8969_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/NSHL0382.png" data-image="photos/andras/2020/NSHL0382_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/NWDL7480.png" data-image="photos/andras/2020/NWDL7480_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/OEQI5962.png" data-image="photos/andras/2020/OEQI5962_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/OIPJ6632.png" data-image="photos/andras/2020/OIPJ6632_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/OWGE9946.png" data-image="photos/andras/2020/OWGE9946_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/PKIK9261.png" data-image="photos/andras/2020/PKIK9261_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/PQDI9271.png" data-image="photos/andras/2020/PQDI9271_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/PSZA8952.png" data-image="photos/andras/2020/PSZA8952_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/QKVH4473.png" data-image="photos/andras/2020/QKVH4473_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/RBHQ9639.png" data-image="photos/andras/2020/RBHQ9639_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/TJQG6842.png" data-image="photos/andras/2020/TJQG6842_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/TLLZ7402.png" data-image="photos/andras/2020/TLLZ7402_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/TYEZ5092.png" data-image="photos/andras/2020/TYEZ5092_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/USDX0486.png" data-image="photos/andras/2020/USDX0486_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/XRJI6673.png" data-image="photos/andras/2020/XRJI6673_ORIGINAL.png">
+
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/AWZM1591.png" data-image="photos/andras/2020/AWZM1591_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/FHDS3411.png" data-image="photos/andras/2020/FHDS3411_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/GJTG4998.png" data-image="photos/andras/2020/GJTG4998_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/MDXL7024.png" data-image="photos/andras/2020/MDXL7024_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/MEPR7447.png" data-image="photos/andras/2020/MEPR7447_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/OKYY8054.png" data-image="photos/andras/2020/OKYY8054_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/PAEE5805.png" data-image="photos/andras/2020/PAEE5805_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/VYOZ9973.png" data-image="photos/andras/2020/VYOZ9973_ORIGINAL.png">
+
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/ETYB0384.png" data-image="photos/andras/2020/ETYB0384_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/IMG_9672.png" data-image="photos/andras/2020/IMG_9672_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/IMG_9676.png" data-image="photos/andras/2020/IMG_9676_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/KJZD0319.png" data-image="photos/andras/2020/KJZD0319_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/LKOT3639.png" data-image="photos/andras/2020/LKOT3639_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/UGYX2161.png" data-image="photos/andras/2020/UGYX2161_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/UQWD1647.png" data-image="photos/andras/2020/UQWD1647_ORIGINAL.png">
+
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/DJZA1343.png" data-image="photos/andras/2020/DJZA1343_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/EDTG2359.png" data-image="photos/andras/2020/EDTG2359_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/GZUU9833.png" data-image="photos/andras/2020/GZUU9833_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/IMG_9326.png" data-image="photos/andras/2020/IMG_9326_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/IMG_9336.png" data-image="photos/andras/2020/IMG_9336_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/KEDB6388.png" data-image="photos/andras/2020/KEDB6388_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/LJNS3029.png" data-image="photos/andras/2020/LJNS3029_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/OMGV2205.png" data-image="photos/andras/2020/OMGV2205_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/OQBC3769.png" data-image="photos/andras/2020/OQBC3769_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/PUQV2374.png" data-image="photos/andras/2020/PUQV2374_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/SWBK4275.png" data-image="photos/andras/2020/SWBK4275_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/WEBC7192.png" data-image="photos/andras/2020/WEBC7192_ORIGINAL.png">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/WYAV3538.png" data-image="photos/andras/2020/WYAV3538_ORIGINAL.png">	
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/ACSG2198.jpg" data-image="photos/andras/2020/ACSG2198_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/BGOB9412.jpg" data-image="photos/andras/2020/BGOB9412_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/EPQL3505.jpg" data-image="photos/andras/2020/EPQL3505_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/ERMA1438.jpg" data-image="photos/andras/2020/ERMA1438_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/FAFG2902.jpg" data-image="photos/andras/2020/FAFG2902_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/HMOriginal-0655071C-86DB-4867-8F24-81E94BE70CA8.jpg" data-image="photos/andras/2020/HMOriginal-0655071C-86DB-4867-8F24-81E94BE70CA8_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/HMOriginal-D9CB983B-0FC7-4189-8594-E45DB687C348.jpg" data-image="photos/andras/2020/HMOriginal-D9CB983B-0FC7-4189-8594-E45DB687C348_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/IAIV2121.jpg" data-image="photos/andras/2020/IAIV2121_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/IMG_8783.jpg" data-image="photos/andras/2020/IMG_8783_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/IMG_8968.jpg" data-image="photos/andras/2020/IMG_8968_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/IMG_9022.jpg" data-image="photos/andras/2020/IMG_9022_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/IMG_9023.jpg" data-image="photos/andras/2020/IMG_9023_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/IMG_9032.jpg" data-image="photos/andras/2020/IMG_9032_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/IMG_9043.jpg" data-image="photos/andras/2020/IMG_9043_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/IMG_9050.jpg" data-image="photos/andras/2020/IMG_9050_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/LFPT7670.jpg" data-image="photos/andras/2020/LFPT7670_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/MEOV7109.jpg" data-image="photos/andras/2020/MEOV7109_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/MLXL2831.jpg" data-image="photos/andras/2020/MLXL2831_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/MOBO8495.jpg" data-image="photos/andras/2020/MOBO8495_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/QOJR9055.jpg" data-image="photos/andras/2020/QOJR9055_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/SLEA8825.jpg" data-image="photos/andras/2020/SLEA8825_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/TJUC4248.jpg" data-image="photos/andras/2020/TJUC4248_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/XTQW5510.jpg" data-image="photos/andras/2020/XTQW5510_ORIGINAL.jpg">
+	<img alt="Fleischmann András" data-description="Fleischmann András" src="photos/andras/2020/YDNK5634.jpg" data-image="photos/andras/2020/YDNK5634_ORIGINAL.jpg">
+
+</div>
+
+<script type="text/javascript"> 
+											   
+	jQuery( document ).ready( function() { jQuery( "#gallery2020" ).unitegallery( {
+
+
+		tiles_space_between_cols:      10,
+		tiles_justified_space_between: 10,
+		//tiles_col_width:               500,
+		tile_enable_shadow:            true,
+			tile_shadow_h: 			   3,			//position of horizontal shadow
+			tile_shadow_v: 			   3,			//position of vertical shadow
+			tile_shadow_blur: 		   5,			//shadow blur
+			tile_shadow_spread: 	   2,			//shadow spread
+			tile_shadow_color: 		   "#2B2B2B",	//shadow color
+
+		theme_gallery_padding:         0,
+		tiles_type: 				   "justified",
+
+		gallery_width: 				   "100%",
+		tiles_exact_width: 			   false,
+
+		gallery_control_keyboard:      true,
+
+	} ) } );
+
+</script>
+
+	<p style="font-size: 14px;"> &nbsp;</p>
+
+	<div style="margin: auto; width: 80%; margin-bottom: -26px;"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/rXA8smHm_uE" frameborder="0" allowfullscreen></iframe></div></div>
+
+	<div style="margin: auto; width: 80%; margin-bottom: -26px;"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/WgzjC6W6L-8" frameborder="0" allowfullscreen></iframe></div></div>
+
+	<div style="margin: auto; width: 80%; margin-bottom: -26px;"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/xUYTD5FCp0Q" frameborder="0" allowfullscreen></iframe></div></div>
+
+	<div style="margin: auto; width: 80%; margin-bottom: -26px;"><div class="videocontainer"><iframe class="iframeshadow" src="https://www.youtube.com/embed/lCQNhgK0Qn4" frameborder="0" allowfullscreen></iframe></div></div>
+
+	<hr style="margin-bottom: 0;">
+
+	<center><a href="index.html" title="2020"><span style="font-size: 0.5em;">2021</span></a> <a href="2020.html" title="2020"><span style="font-size: 0.5em;">2020</span></a> <a href="2019.html" title="2019"><span style="font-size: 0.5em;">2019</span></a> <a href="2018.html" title="2018"><span style="font-size: 0.5em;">2018</span></a> <a href="2017.html" title="2017"><span style="font-size: 0.5em;">2017</span></a></center>
+
+	<br>
+
+  </div>
+
+ 	</body>
+  
+</html>
